@@ -10,7 +10,26 @@ Concepts learnt:
 - How to use strings
 - What are indexing and slicing in Python
 - What is the official Python coding style and how to check your code with `pycodestyle`
-# Resources
+## Task 0. Run Python file
+Write a Shell script that runs a Python script.
+-The Python file name will be saved in the environment variable `$PYFILE`
+
+## Task 1. Run inline
+Write a Shell script that runs Python code.
+- The Python code will be saved in the environment variable `$PYCODE` 
+## Task  
+## Task  
+## Task  
+## Task  
+## Task  
+## Task  
+## Task  
+## Task  
+## Task  
+## Task  
+## Task  
+## Task  
+## Resources
 - [The Python tutorial (only the first three chapters below)](https://docs.python.org/3/tutorial/index.html)
 - [Whetting Your Appetite](https://docs.python.org/3/tutorial/appetite.html)
 - [Using the Python Interpreter](https://docs.python.org/3/tutorial/interpreter.html)

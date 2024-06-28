@@ -13,13 +13,34 @@ Concepts learnt:
 ## Task 0. Run Python file
 Write a Shell script that runs a Python script.
 -The Python file name will be saved in the environment variable `$PYFILE`
+```bash
+guillaume@ubuntu:~/py/0x00$ cat main.py 
+#!/usr/bin/python3
+print("Best School")
+
+guillaume@ubuntu:~/py/0x00$ export PYFILE=main.py
+guillaume@ubuntu:~/py/0x00$ ./0-run
+Best School
+guillaume@ubuntu:~/py/0x00$ 
+```
 
 ## Task 1. Run inline
 Write a Shell script that runs Python code.
 - The Python code will be saved in the environment variable `$PYCODE` 
+```bash
+guillaume@ubuntu:~/py/0x00$ export PYCODE='print(f"Best School: {88+10}")'
+guillaume@ubuntu:~/py/0x00$ ./1-run_inline 
+Best School: 98
+guillaume@ubuntu:~/py/0x00$ 
+```
 ## Task 2. Hello, print
 Write a Python script that prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line.
 - Use the function `print`
+```bash
+guillaume@ubuntu:~/py/0x00$ ./2-print.py 
+"Programming is like building a multilingual puzzle
+guillaume@ubuntu:~/py/0x00$
+```
 ## Task 3. Print integer
 Complete this source code in order to print the integer stored in the variable `number`, followed by `Battery street`, followed by a new line.
 - You can find the source code [here](https://github.com/alx-tools/0x00.py/blob/master/3-print_number.py)
@@ -56,6 +77,12 @@ Complete this source code in order to print 3 times a string stored in the varia
     * followed by a new line
 - You are not allowed to use any loops or conditional statement
 - Your program should be maximum 5 lines long
+```bash
+guillaume@ubuntu:~/py/0x00$ ./5-print_string.py 
+Holberton SchoolHolberton SchoolHolberton School
+Holberton
+guillaume@ubuntu:~/py/0x00$ 
+```
 ## Task 6. Play with strings
 Complete this source code to print `Welcome to Holberton School!`
 - You can find the source code [here](https://github.com/alx-tools/0x00.py/blob/master/6-concat.py)
@@ -129,10 +156,33 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 guillaume@ubuntu:~/py/0x00$  
 ```
-## Task  
-## Task  
-## Task  
-## Task  
+## Task  10. Linked list cycle
+**Technical interview preparation:**
+- You are not allowed to google anything
+- Whiteboard first
+- This task and all future technical interview prep tasks will include checks for the efficiency of your solution, i.e. is your solution’s runtime fast enough, does your solution require extra memory usage / mallocs, etc.
+Write a function in C that checks if a singly linked list has a cycle in it.
+- Prototype: `int check_cycle(listint_t *list);`
+- Return: `0` if there is no cycle, `1` if there is a cycle
+Requirements:
+- Only these functions are allowed: `write`, `printf`, `putchar`, `puts`, `malloc`, `free`
+```bash
+carrie@ubuntu:~/0x00$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 10-main.c 10-check_cycle.c 10-linked_lists.c -o cycle
+carrie@ubuntu:~/0x00$$ ./cycle 
+1024
+402
+98
+4
+3
+2
+1
+0
+Linked list has no cycle
+Linked list has a cycle
+carrie@ubuntu:~/0x00$
+```
+**Solving a problem is already a big win! but finding the best and optimal way to solve it, it’s way better! Think about the most optimal / fastest way to do it.**
+ 
 ## Resources
 - [The Python tutorial (only the first three chapters below)](https://docs.python.org/3/tutorial/index.html)
 - [Whetting Your Appetite](https://docs.python.org/3/tutorial/appetite.html)

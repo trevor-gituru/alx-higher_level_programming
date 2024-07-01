@@ -171,16 +171,6 @@ Write a function that checks for lowercase character.
 - Tips: `ord()`
 - You don’t need to understand `__import__`
 ```bash
-guillaume@ubuntu:~/0x01$ cat 7-main.py
-#!/usr/bin/env python3
-islower = __import__('7-islower').islower
-
-print("a is {}".format("lower" if islower("a") else "upper"))
-print("H is {}".format("lower" if islower("H") else "upper"))
-print("A is {}".format("lower" if islower("A") else "upper"))
-print("3 is {}".format("lower" if islower("3") else "upper"))
-print("g is {}".format("lower" if islower("g") else "upper"))
-
 guillaume@ubuntu:~/0x01$ ./7-main.py
 a is lower
 H is upper
@@ -189,7 +179,22 @@ A is upper
 g is lower
 guillaume@ubuntu:~/0x01$ 
 ```
-### 
+### 8. To uppercase
+Write a function that prints a string in uppercase followed by a new line.
+
+- Prototype: `def uppercase(str):`
+- You can only use no more than 2 `print` functions with string format
+- You can only use one loop in your code
+- You are not allowed to `import` any module
+- You are not allowed to use `str.upper()` and `str.isupper()`
+- Tips: `ord()`
+- You don’t need to understand __import__
+```bash
+guillaume@ubuntu:~/0x01$ ./8-main.py
+BEST
+BEST SCHOOL 98 BATTERY STREET
+guillaume@ubuntu:~/0x01$ 
+```
 ### 
 ### 
 ### 

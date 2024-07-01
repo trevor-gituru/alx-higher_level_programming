@@ -221,7 +221,22 @@ guillaume@ubuntu:~/0x01$ ./10-main.py
 98
 guillaume@ubuntu:~/0x01$ 
 ```
-### 
+### 11. a ^ b
+Write a function that computes `a` to the power of `b` and return the value.
+
+- Prototype: `def pow(a, b):`
+- Returns the value of `a ^ b`
+- You are not allowed to import any module
+- You don’t need to understand `__import__`
+```bash
+guillaume@ubuntu:~/0x01$ ./11-main.py
+4
+9604
+1
+0.0001
+-1024
+guillaume@ubuntu:~/0x01$ 
+```
 ### 
 ### 
 ## Resources

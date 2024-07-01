@@ -251,7 +251,38 @@ guillaume@ubuntu:~/0x01$ ./12-main.py | cat -e
 1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz 16 17 Fizz 19 Buzz Fizz 22 23 Fizz Buzz 26 Fizz 28 29 FizzBuzz 31 32 Fizz 34 Buzz Fizz 37 38 Fizz Buzz 41 Fizz 43 44 FizzBuzz 46 47 Fizz 49 Buzz Fizz 52 53 Fizz Buzz 56 Fizz 58 59 FizzBuzz 61 62 Fizz 64 Buzz Fizz 67 68 Fizz Buzz 71 Fizz 73 74 FizzBuzz 76 77 Fizz 79 Buzz Fizz 82 83 Fizz Buzz 86 Fizz 88 89 FizzBuzz 91 92 Fizz 94 Buzz Fizz 97 98 Fizz Buzz $
 guillaume@ubuntu:~/0x01$ 
 ``` 
-### 
+### 13. Insert in sorted linked list
+Technical interview preparation:
+
+    - You are not allowed to google anything
+    - Whiteboard first
+Write a function in C that inserts a number into a sorted singly linked list.
+
+- Prototype: `listint_t *insert_node(listint_t **head, int number);`
+- Return: the address of the new node, or `NULL` if it failed
+```bash
+carrie@ubuntu:0x01$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 13-main.c linked_lists.c 13-insert_number.c -o insert
+carrie@ubuntu:0x01$ ./insert
+0
+1
+2
+3
+4
+98
+402
+1024
+-----------------
+0
+1
+2
+3
+4
+27
+98
+402
+1024
+carrie@ubuntu:0x01$
+````
 ## Resources
 - [More Control Flow Tools (Read until “4.6. Defining Functions” included)](https://docs.python.org/3/tutorial/controlflow.html#function-annotations)
 - [IndentationError](https://www.youtube.com/watch?v=1QXOd2ZQs-Q)

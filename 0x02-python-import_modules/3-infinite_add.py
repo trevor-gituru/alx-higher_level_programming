@@ -2,9 +2,9 @@
 if __name__ == "__main__":
     from sys import argv
 
-    num_args = len(argv)
+    n_args = len(argv)
     result = 0
-    for i in range(1, num_args):
+    for i in range(1, n_args):
         result += int(argv[i])
 
     print(result)

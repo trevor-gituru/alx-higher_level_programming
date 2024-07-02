@@ -43,7 +43,20 @@ guillaume@ubuntu:~/0x03$ ./1-main.py
 Element at index 3 is 4
 guillaume@ubuntu:~/0x03$ 
 ```
-### 
+### 2. Replace element
+Write a function that replaces an element of a list at a specific position (like in C).
+
+- Prototype: `def replace_in_list(my_list, idx, element):`
+- If `idx` is negative, the function should not modify anything, and returns the original list
+- If `idx` is out of range (> of number of element in `my_list`), the function should not modify anything, and returns the original list
+- You are not allowed to import any module
+- You are not allowed to use `try/except`
+```bash
+guillaume@ubuntu:~/0x03$ ./2-main.py
+[1, 2, 3, 9, 5]
+[1, 2, 3, 9, 5]
+guillaume@ubuntu:~/0x03$ 
+```
 ### 
 ### 
 ### 

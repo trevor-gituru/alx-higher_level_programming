@@ -75,7 +75,19 @@ guillaume@ubuntu:~/0x03$ ./3-main.py
 1
 guillaume@ubuntu:~/0x03$ 
 ```
-### 
+### 4. Replace in a copy
+Write a function that replaces an element in a list at a specific position without modifying the original list (like in C).
+- Prototype: `def new_in_list(my_list, idx, element):`
+- If `idx` is negative, the function should return a copy of the original list
+- If `idx` is out of range (> of number of element in `my_list`), the function should return a copy of the original list
+- You are not allowed to import any module
+- You are not allowed to use `try/except`
+```bash
+guillaume@ubuntu:~/0x03$ ./4-main.py
+[1, 2, 3, 9, 5]
+[1, 2, 3, 4, 5]
+guillaume@ubuntu:~/0x03$ 
+```
 ### 
 ### 
 ### 

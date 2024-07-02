@@ -98,8 +98,30 @@ guillaume@ubuntu:~/0x02$ ./3-infinite_add.py 11111111111111111111111111111111111
 11111111111111111111111111111111111111111111111111222222222222222222222222222333333333333333333334568900000011111111111111111111111111111111111111111111111111112222222222222222222222222222222222223435467866765443534434222222254444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555666666666666666666666666666666777777777777777777777777777777888888888888888888888888888888899999999999999999999999989999999999999999999
 guillaume@ubuntu:~/0x02$
 ```
-### 
-### 
+### 4. Who are you?
+Write a program that prints all the names defined by the compiled module [hidden_4.pyc](https://github.com/alx-tools/0x02.py/raw/master/hidden_4.pyc) (please download it locally).
+
+- You should print one name per line, in alpha order
+- You should print only names that do **not** start with __
+- Your code should not be executed when imported
+- Make sure you are running your code in Python3.8.x (`hidden_4.pyc` has been compiled with this version)
+```bash
+guillaume@ubuntu:~/0x02$ curl -Lso "hidden_4.pyc" "https://github.com/alx-tools/0x02.py/raw/master/hidden_4.pyc"
+guillaume@ubuntu:~/0x02$ ./4-hidden_discovery.py | sort
+my_secret_santa
+print_hidden
+print_school
+guillaume@ubuntu:~/0x02$ 
+```
+### 5. Everything can be imported
+Write a program that imports the variable `a` from the file `variable_load_5.py` and prints its value.
+- You are not allowed to use `*` for importing or `__import__`
+- Your code should not be executed when imported
+```bash
+guillaume@ubuntu:~/0x02$ ./5-variable_load.py
+98
+guillaume@ubuntu:~/0x02$
+```
 ## Resources
 - [Modules](https://docs.python.org/3/tutorial/modules.html)
 - [Command line arguments](https://docs.python.org/3/tutorial/stdlib.html#command-line-arguments)

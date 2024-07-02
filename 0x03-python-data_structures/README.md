@@ -57,7 +57,24 @@ guillaume@ubuntu:~/0x03$ ./2-main.py
 [1, 2, 3, 9, 5]
 guillaume@ubuntu:~/0x03$ 
 ```
-### 
+### 3. Print a list of integers... in reverse!
+Write a function that prints all integers of a list, in reverse order.
+
+- Prototype: `def print_reversed_list_integer(my_list=[]):`
+- Format: one integer per line. See example
+- You are not allowed to import any module
+- You can assume that the list only contains integers
+- You are not allowed to cast integers into strings
+- You have to use `str.format()` to print integers
+```bash
+guillaume@ubuntu:~/0x03$ ./3-main.py
+5
+4
+3
+2
+1
+guillaume@ubuntu:~/0x03$ 
+```
 ### 
 ### 
 ### 

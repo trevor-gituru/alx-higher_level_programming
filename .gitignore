@@ -1,2 +1,3 @@
 # Ignore the push script
 **/push.sh
+**/__pycache__

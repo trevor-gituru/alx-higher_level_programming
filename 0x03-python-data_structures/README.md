@@ -205,7 +205,33 @@ guillaume@ubuntu:~/py/0x03$ wc -l 12-switch.py
 5 12-switch.py
 guillaume@ubuntu:~/py/0x03$ 
 ```
-### 
+### 13. Linked list palindrome
+Technical interview preparation:
+
+- You are not allowed to google anything
+- Whiteboard first
+Write a function in C that checks if a singly linked list is a palindrome.
+
+- Prototype: `int is_palindrome(listint_t **head);`
+- Return: `0` if it is not a palindrome, `1` if it is a palindrome
+- An empty list is considered a palindrome
+```bash
+carrie@ubuntu:0x03$
+carrie@ubuntu:0x03$ gcc -Wall -Werror -Wextra -pedantic 13-main.c linked_lists.c 13-is_palindrome.c -o palindrome
+carrie@ubuntu:0x03$ ./palindrome
+1
+17
+972
+50
+98
+98
+50
+972
+17
+1
+Linked list is a palindrome
+carrie@ubuntu:0x03$
+```
 
 ## Resources
 - [3.1.3. Lists](https://docs.python.org/3/tutorial/introduction.html#lists)

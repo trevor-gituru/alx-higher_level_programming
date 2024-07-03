@@ -5,5 +5,5 @@ def search_replace(my_list, search, replace):
     an element by another in a new list
     """
     if my_list is not None:
-        new_list = [x if x != search else replace for x in my_list]
+        new_list = [elememt if elememt != search else replace for elememt in my_list]
         return new_list

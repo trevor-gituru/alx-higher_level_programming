@@ -6,6 +6,6 @@ def uniq_add(my_list=[]):
         """
         unique_list = set(my_list)
         unique_sum = 0
-        for x in unique_list:
-            unique_sum += x
+        for item in unique_list:
+            unique_sum += item
         return unique_sum

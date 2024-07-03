@@ -162,7 +162,23 @@ guillaume@ubuntu:~/0x03$ ./9-main.py
 Max: 90
 guillaume@ubuntu:~/0x03$ 
 ```
-### 
+### 10. Only by 2
+Write a function that finds all multiples of 2 in a list.
+- Prototype: `def divisible_by_2(my_list=[]):`
+- Return a new list with `True` or `False`, depending on whether the integer at the same position in the original list is a multiple of 2
+- The new list should have the same size as the original list
+- You are not allowed to import any module
+```bash
+guillaume@ubuntu:~/0x03$ ./10-main.py
+0 is divisible by 2
+1 is not divisible by 2
+2 is divisible by 2
+3 is not divisible by 2
+4 is divisible by 2
+5 is not divisible by 2
+6 is divisible by 2
+guillaume@ubuntu:~/0x03$ 
+```
 ### 
 ### 
 ### 

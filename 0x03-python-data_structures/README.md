@@ -179,7 +179,18 @@ guillaume@ubuntu:~/0x03$ ./10-main.py
 6 is divisible by 2
 guillaume@ubuntu:~/0x03$ 
 ```
-### 
+### 11. Delete at
+Write a function that deletes the item at a specific position in a list.
+
+- Prototype: `def delete_at(my_list=[], idx=0):`
+- If `idx` is negative or out of range, nothing change (returns the same list)
+- You are not allowed to use `pop()`
+- You are not allowed to import any module
+```bash
+guillaume@ubuntu:~/0x03$ ./11-main.py
+[1, 2, 3, 5]
+[1, 2, 3, 5]
+guillaume@ubuntu:~/0x03$ 
 ### 
 ### 
 

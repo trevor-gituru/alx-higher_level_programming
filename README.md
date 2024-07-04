@@ -5,4 +5,4 @@
 - 0x02. Python - import & modules (**Left with 4 advanced task (6 - 9)**)
 - 0x03. Python - Data Structures (**Left with 1 mandatory task (13) & 1 advanced task (14)**)
 - 0x04. Python - More Data Structures: Set, Dictionary (**Left with 1 mandatory task (12) & 4 advanced task (13 - 16)**)
-
+- 0x05. Python - Exceptions (**Left with 4 advanced task (7 - 10)**)

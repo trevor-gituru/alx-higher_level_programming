@@ -122,7 +122,16 @@ out of range
 [5.0, 0, 0, 2.0, 0]
 guillaume@ubuntu:~/0x05$
 ```  
-### 
+### 5. Raise exception
+Write a function that raises a type exception.
+
+- Prototype: `def raise_exception():`
+- You are not allowed to import any module
+```bash
+guillaume@ubuntu:~/0x05$ ./5-main.py
+Exception raised
+guillaume@ubuntu:~/0x05$ 
+```
 ### 
 ### 
 ## Resources

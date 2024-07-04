@@ -132,7 +132,16 @@ guillaume@ubuntu:~/0x05$ ./5-main.py
 Exception raised
 guillaume@ubuntu:~/0x05$ 
 ```
-### 
+### 6. Raise a message
+Write a function that raises a name exception with a message.
+
+- Prototype: `def raise_exception_msg(message=""):`
+- You are not allowed to import any module
+```bash
+guillaume@ubuntu:~/0x05$ ./6-main.py
+C is fun
+guillaume@ubuntu:~/0x05$ 
+```
 ### 
 ## Resources
 - [Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html)

@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
 module: 2-square
-defines a class Square
+Defines a class Square
 """
 
 
 class Square:
-    """defines a square"""
+    """Defines a square."""
     def __init__(self, size=0):
         self.__size = size
 
@@ -17,5 +17,5 @@ class Square:
             raise ValueError("size must be >= 0")
 
     def area(self):
-        """returns the current square area"""
+        """Returns the current square area."""
         return (self.__size ** 2)

@@ -59,6 +59,7 @@ Write a class `Square` that defines a square by: (based on `1-square.py`)
 `size` must be an integer, otherwise raise a `TypeError` exception with the message `size must be an integer`
     * if `size` is less than `0`, raise a `ValueError` exception with the `message size must be >= 0`
 - You are not allowed to import any module
+```bash
 guillaume@ubuntu:~/0x06$ ./2-main.py
 <class '2-square.Square'>
 {'_Square__size': 3}
@@ -70,7 +71,23 @@ size must be an integer
 size must be >= 0
 guillaume@ubuntu:~/0x06$ 
 ```
-### 
+### 3. Area of a square
+Write a class `Square` that defines a square by: (based on `2-square.py`)
+
+- Private instance attribute: `size`
+- Instantiation with optional `size`: `def __init__(self, size=0):`
+    * `size` must be an integer, otherwise raise a `TypeError` exception with the message `size` must be an integer
+    * if `size` is less than `0`, raise a `ValueError` exception with the message `size must be >= 0`
+- Public instance method: `def area(self):` that returns the current square area
+- You are not allowed to import any module
+```bash
+guillaume@ubuntu:~/0x06$ ./3-main.py
+Area: 9
+'Square' object has no attribute 'size'
+'Square' object has no attribute '__size'
+Area: 25
+guillaume@ubuntu:~/0x06$ 
+``` 
 ### 
 ### 
 ### 

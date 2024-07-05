@@ -8,8 +8,8 @@ defines a class Square
 class Square:
     """defines a square"""
     def __init__(self, size=0, position=(0, 0)):
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -44,14 +44,13 @@ class Square:
 
     def area(self):
         """returns the current square area"""
-        return (self.__size ** 2)
+        return (self.size ** 2)
 
     def my_print(self):
         """prints the square with # character"""
-        if self.__size == 0:
+        if self.size == 0:
             print("")
         else:
-            for _ in range(self.__position[1]):
-                print()
-            for _ in range(self.__size):
-                print(" " * self.__position[0] + "#" * self.__size)
+            print('\n' * self.position[1])
+            for _ in range(self.size):
+                print(" " * self.position[0] + "#" * self.size)

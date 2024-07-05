@@ -125,27 +125,9 @@ Write a class `Square` that defines a square by: (based on `4-square.py`)
 - Public instance method: `def my_print(self):` that prints in stdout the square with the character `#`:
     * if `size` is equal to `0`, print an empty line
 - You are not allowed to import any module
-guillaume@ubuntu:~/0x06$ cat 5-main.py
-#!/usr/bin/python3
-Square = __import__('5-square').Square
-
-my_square = Square(3)
-my_square.my_print()
-
-print("--")
-
-my_square.size = 10
-my_square.my_print()
-
-print("--")
-
-my_square.size = 0
-my_square.my_print()
-
-print("--")
-
+```bash
 guillaume@ubuntu:~/0x06$ ./5-main.py
-```
+
 ###
 ###
 ###
@@ -164,6 +146,7 @@ guillaume@ubuntu:~/0x06$ ./5-main.py
 
 --
 guillaume@ubuntu:~/0x06$ 
+```
 ### 
 ## Resources
 - [Object Oriented Programming (Read everything until the paragraph “Inheritance” excluded. You do NOT have to learn about class attributes, `classmethod` and `staticmethod` yet)](https://python.swaroopch.com/oop.html)

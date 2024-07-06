@@ -75,7 +75,13 @@ What do these 3 lines print?
 >>> s2 = "Best School"
 >>> print(s1 is s2)
 ```
-###
+### 10. And with a list, is it equal
+What do these 3 lines print?
+```bash
+>>> l1 = [1, 2, 3]
+>>> l2 = [1, 2, 3] 
+>>> print(l1 == l2)
+```
 ###
 ###
 ###

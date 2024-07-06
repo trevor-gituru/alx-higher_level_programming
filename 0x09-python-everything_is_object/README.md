@@ -172,7 +172,11 @@ guillaume@ubuntu:~/0x09$
 a = ()
 ```
 Is `a` a tuple? Answer with `Yes` or `No`.
-###
+### 21. Tuple or not?
+```python
+a = (1, 2)
+```
+Is `a` a tuple? Answer with `Yes` or `No`.
 ###
 ###
 ###

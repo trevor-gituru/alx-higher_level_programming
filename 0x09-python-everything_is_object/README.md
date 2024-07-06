@@ -150,7 +150,23 @@ l2 = [4, 5, 6]
 assign_value(l1, l2)
 print(l1)
 ```
-###
+### 19. Copy a list object
+Write a function `def copy_list(l):` that returns a copy of a list.
+
+- The input list can contain any type of objects
+- Your file should be maximum 3-line long (no documentation needed)
+- You are not allowed to import any module
+```bash
+guillaume@ubuntu:~/0x09$ ./19-main.py
+[1, 2, 3]
+[1, 2, 3]
+[1, 2, 3]
+True
+False
+guillaume@ubuntu:~/0x09$ wc -l 19-copy_list.py 
+3 19-copy_list.py
+guillaume@ubuntu:~/0x09$ 
+```
 ###
 ###
 ###

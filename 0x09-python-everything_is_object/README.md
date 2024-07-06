@@ -41,7 +41,12 @@ In the following code, do `a` and `b` point to the same object? Answer with `Yes
 >>> a = 89
 >>> b = a
 ```
-###
+### 5. Right count =+
+In the following code, do `a` and `b` point to the same object? Answer with `Yes` or `No`.
+```bash
+>>> a = 89
+>>> b = a + 1
+```
 ###
 ###
 ###

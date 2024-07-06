@@ -103,7 +103,14 @@ What do these 3 lines print?
 >>> l2 = l1
 >>> print(l1 is l2)
 ```
-###
+### 14. List append
+What does this script print?
+```python
+l1 = [1, 2, 3]
+l2 = l1
+l1.append(4)
+print(l2)
+```
 ###
 ###
 ###

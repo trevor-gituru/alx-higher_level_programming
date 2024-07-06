@@ -1,3 +1,6 @@
 # Ignore the push script
 **/push.sh
+# Ignore pycache folders having bytecode compilation
 **/__pycache__
+# Ignore the run script
+**/run.sh

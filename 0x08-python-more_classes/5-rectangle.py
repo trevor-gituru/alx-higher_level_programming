@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-module: 0-rectangle
-contains the class Rectangle
+Module: 0-rectangle
+Contains the class Rectangle
 Rectangle has the attributes width and height
 """
 
@@ -74,5 +74,5 @@ class Rectangle:
         return 'Rectangle({:d}, {:d})'.format(self.__width, self.__height)
 
     def __del__(self):
-        """deletes an instane of rectangle"""
+        """Deletes an instane of rectangle"""
         print("Bye rectangle...")

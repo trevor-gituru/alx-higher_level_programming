@@ -54,7 +54,13 @@ What do these 3 lines print?
 >>> s2 = s1
 >>> print(s1 == s2)
 ```
-###
+### 7. Is the same
+What do these 3 lines print?
+```python
+>>> s1 = "Best"
+>>> s2 = s1
+>>> print(s1 is s2)
+```
 ###
 ###
 ###

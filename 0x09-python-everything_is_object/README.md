@@ -196,7 +196,13 @@ a = (1)
 b = (1)
 a is b
 ```
-###
+### 25. Tuple or not
+What does this script print?
+```python
+a = (1, 2)
+b = (1, 2)
+a is b
+```
 ###
 
 

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-module: 0-rectangle
-contains the class Rectangle
+Module: 0-rectangle
+Contains the class Rectangle
 the class Rectangle is an empty class
 """
 

@@ -61,7 +61,13 @@ What do these 3 lines print?
 >>> s2 = s1
 >>> print(s1 is s2)
 ```
-###
+### 8. Is really equal
+What do these 3 lines print?
+```bash
+>>> s1 = "Best School"
+>>> s2 = "Best School"
+>>> print(s1 == s2)
+```
 ###
 ###
 ###

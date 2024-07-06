@@ -47,7 +47,13 @@ In the following code, do `a` and `b` point to the same object? Answer with `Yes
 >>> a = 89
 >>> b = a + 1
 ```
-###
+### 6. Is equal
+What do these 3 lines print?
+```python
+>>> s1 = "Best School"
+>>> s2 = s1
+>>> print(s1 == s2)
+```
 ###
 ###
 ###

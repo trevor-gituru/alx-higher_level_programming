@@ -1,28 +1,28 @@
 #!/usr/bin/python3
 """
-module: 0-rectangle
-contains the class Rectangle
+Module: 0-rectangle
+Contains the class Rectangle
 Rectangle has the attributes width and height
 """
 
 
 class Rectangle:
     """
-    defines a rectangle
+    Defines a rectangle
     """
     def __init__(self, width=0, height=0):
-        """initializes the rectangles fields"""
+        """Initializes the rectangles fields"""
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """getter that retrives the width"""
+        """Getter that retrives the width"""
         return self.__width
 
     @width.setter
     def width(self, value):
-        """setter that sets width"""
+        """Setter that sets width"""
         if type(value) is not int:
             raise TypeError('width must be an integer')
 
@@ -33,12 +33,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """getter that retrives the height"""
+        """Getter that retrives the height"""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """setter that sets height"""
+        """Setter that sets height"""
         if type(value) is not int:
             raise TypeError('height must be an integer')
 

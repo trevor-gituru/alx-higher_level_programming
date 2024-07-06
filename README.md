@@ -7,5 +7,6 @@
 - 0x04. Python - More Data Structures: Set, Dictionary (**Left with 1 mandatory task (12) & 4 advanced task (13 - 16)**)
 - 0x05. Python - Exceptions (**Left with 4 advanced task (7 - 10)**)
 - 0x06. Python - Classes and Objects (**Left with 4 advanced task (7 - 10)**)
-- 0x08. Python - More Classes and Objects (** Left 1 advanced task 10**)
+- 0x08. Python - More Classes and Objects (**Left 1 advanced task 10**)
+- 0x09. Python - Everything is object (**Left with 6 advanced task (29 - 34)**)
 

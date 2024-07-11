@@ -48,13 +48,32 @@ Write a function that divides all elements of a matrix.
 guillaume@ubuntu:~/0x07$ ./2-main.py
 [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
 [[1, 2, 3], [4, 5, 6]]
+```
+```bash
 guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/2-matrix_divided.txt | tail -2
 5 passed and 0 failed.
 Test passed.
 guillaume@ubuntu:~/0x07$ 
 ```
 Note: you might have a different number of tests than in the above example. As usual, your tests should cover all possible cases.
-### 
+### 2. Say my name
+Write a function that prints `My name is <first name> <last name>`
+
+- Prototype: `def say_my_name(first_name, last_name=""):`
+- `first_name` and `last_name` must be `strings` otherwise, raise a `TypeError` exception with the message `first_name must be a string` or `last_name must be a string`
+- You are not allowed to import any module
+```bash
+guillaume@ubuntu:~/0x07$ ./3-main.py | cat -e
+My name is John Smith$
+My name is Walter White$
+My name is Bob $
+first_name must be a string$
+guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/3-say_my_name.txt | tail -2
+5 passed and 0 failed.
+Test passed.
+guillaume@ubuntu:~/0x07$
+``` 
+**Note:** you might have a different number of tests than in the above example. As usual, your tests should cover all possible cases.
 ### 
 ### 
 ### 

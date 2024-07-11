@@ -27,7 +27,19 @@ guillaume@ubuntu:~/0x0A$ ./0-main.py
 guillaume@ubuntu:~/0x0A$ 
 ```
 **No test cases needed**
-### 
+### 1. My list
+Write a class `MyList` that inherits from `list`:
+
+- Public instance method: `def print_sorted(self):` that prints the list, but sorted (ascending sort)
+- You can assume that all the elements of the list will be of type `int`
+- You are not allowed to import any module
+```bash
+guillaume@ubuntu:~/0x0A$ ./1-main.py
+[1, 4, 2, 3, 5]
+[1, 2, 3, 4, 5]
+[1, 4, 2, 3, 5]
+guillaume@ubuntu:~/0x0A$ 
+```
 ### 
 ### 
 ### 

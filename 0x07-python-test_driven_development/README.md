@@ -160,8 +160,6 @@ In this task, you will write unittests for the function `def max_integer(list=[]
 - All tests you make must be passable by the function below
 - We strongly encourage you to work together on test cases, so that you don’t miss any edge case
 ```bash
-guillaume@ubuntu:~/0x07$ cat 6-main.py
-guillaume@ubuntu:~/0x07$
 guillaume@ubuntu:~/0x07$ ./6-main.py
 4
 4

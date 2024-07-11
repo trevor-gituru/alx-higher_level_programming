@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Contains a function that prints a square
+"""Contains a function that prints a square
 
 args:
     size - size length of the square

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""contains a method that prints the full name
+"""Contains a method that prints the full name
 
 args: first_name - first name
       last_name - last name
@@ -8,7 +8,7 @@ args: first_name - first name
 
 def say_my_name(first_name, last_name=""):
     """
-    prints a persons full name
+    Prints a persons full name
     """
     if not isinstance(first_name, str):
         raise TypeError('first_name must be a string')

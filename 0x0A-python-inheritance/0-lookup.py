@@ -5,5 +5,5 @@ contains the lookup function
 
 
 def lookup(obj):
-    """returns list of attributes and objects"""
+    """Returns list of attributes and objects"""
     return dir(obj)

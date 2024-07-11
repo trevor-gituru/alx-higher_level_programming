@@ -7,7 +7,7 @@ module: 4-print_square
 How to use the print_square function
 +++++++++++++++++++++++++++++++++++
 
-import the function from module:
+Import the function from module:
     >>> print_square = __import__("4-print_square").print_square
 
 Examples:

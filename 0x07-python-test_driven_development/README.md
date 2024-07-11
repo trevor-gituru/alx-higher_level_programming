@@ -148,7 +148,37 @@ Utinam quidem dicerent alium alio beatiorem! Iam ruinas videresguillaume@ubuntu:
 guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/5-text_indentation.txt
 guillaume@ubuntu:~/0x07$ 
 ```
-### 
+### 5. Max integer - Unittest
+Since the beginning you have been creating “Interactive tests”. For this exercise, you will add Unittests.
+
+In this task, you will write unittests for the function `def max_integer(list=[]):`.
+
+- Your test file should be inside a folder tests
+- You have to use the unittest module
+- Your test file should be python files (extension: .py)
+- Your test file should be executed by using this command: `python3 -m unittest tests.6-max_integer_test`
+- All tests you make must be passable by the function below
+- We strongly encourage you to work together on test cases, so that you don’t miss any edge case
+```bash
+guillaume@ubuntu:~/0x07$ cat 6-main.py
+guillaume@ubuntu:~/0x07$
+guillaume@ubuntu:~/0x07$ ./6-main.py
+4
+4
+guillaume@ubuntu:~/0x07$
+guillaume@ubuntu:~/0x07$ python3 -m unittest tests.6-max_integer_test 2>&1 | tail -1
+OK
+guillaume@ubuntu:~/0x07$
+guillaume@ubuntu:~/0x07$ head -7 tests/6-max_integer_test.py 
+#!/usr/bin/python3
+"""Unittest for max_integer([..])
+"""
+import unittest
+max_integer = __import__('6-max_integer').max_integer
+
+class TestMaxInteger(unittest.TestCase):
+guillaume@ubuntu:~/0x07$ 
+```
 ## Resources
 - [doctest — Test interactive Python examples (until “26.2.3.7. Warnings” included)](https://docs.python.org/3.4/library/doctest.html#doctest.NORMALIZE_WHITESPACE)
 - [doctest – Testing through documentation](https://pymotw.com/3/doctest/)

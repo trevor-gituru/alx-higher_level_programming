@@ -146,7 +146,20 @@ guillaume@ubuntu:~/0x0A$ ./9-main.py
 guillaume@ubuntu:~/0x0A$
 ``` 
 **No test cases needed**
-### 
+### 10. Square #1
+Write a class `Square` that inherits from `Rectangle` (`9-rectangle.py`):
+
+- Instantiation with size: `def __init__(self, size):`:
+    * `size` must be private. No getter or setter
+    * `size` must be a positive integer, validated by `integer_validator`
+- the `area()` method must be implemented
+```bash
+guillaume@ubuntu:~/0x0A$ ./10-main.py
+[Rectangle] 13/13
+169
+guillaume@ubuntu:~/0x0A$
+``` 
+**No test cases needed**
 ### 
 ## Resources
 - [Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)

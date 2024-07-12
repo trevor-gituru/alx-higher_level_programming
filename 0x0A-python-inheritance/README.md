@@ -63,7 +63,17 @@ guillaume@ubuntu:~/0x0A$ ./3-main.py
 guillaume@ubuntu:~/0x0A$ 
 ```
 **No test cases needed**
-### 
+### 4. Only sub class of
+Write a function that returns `True` if the object is an instance of a class that inherited (directly or indirectly) from the specified class ; otherwise `False`.
+
+- Prototype: `def inherits_from(obj, a_class):`
+- You are not allowed to import any module
+```bash
+guillaume@ubuntu:~/0x0A$ ./4-main.py
+True inherited from class int
+True inherited from class object
+guillaume@ubuntu:~/0x0A$ 
+**No test cases needed**
 ### 
 ### 
 ### 

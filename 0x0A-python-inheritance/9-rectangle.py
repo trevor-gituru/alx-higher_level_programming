@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-contains the class Rectangle
+Contains the class Rectangle
 """
 
 
@@ -11,8 +11,8 @@ class Rectangle(BaseGeometry):
     """derived class"""
     def __init__(self, width, height):
         """constructor"""
-        self.integer_validator("width", width)
-        self.integer_validator("height", height)
+        super().integer_validator("width", width)
+        super().integer_validator("height", height)
         self.__width = width
         self.__height = height
 
@@ -22,4 +22,4 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """returns rectangle description"""
-        return f"[Rectangle] {str(self.__width)}/{str(self.__height)}"
+        return f"[Rectangle] {self.__width:d}/{self.__height:0d}"

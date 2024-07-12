@@ -10,4 +10,5 @@
 - 0x08. Python - More Classes and Objects (**Left 1 advanced task 10**)
 - 0x09. Python - Everything is object (**Left with 6 advanced task (29 - 34)**)
 - 0x07. Python - Test-driven development (**Left with 3 advanced task (6 - 8)**)
+- 0x0A. Python - Inheritance (**Left with 2 advanced task (12 - 13)**)
 

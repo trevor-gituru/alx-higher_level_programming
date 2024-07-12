@@ -88,7 +88,17 @@ guillaume@ubuntu:~/0x0A$
 ```
 **No test cases needed**
 
-### 
+### 6. Improve Geometry
+Write a class `BaseGeometry` (based on 5-base_geometry.py).
+
+- Public instance method: `def area(self):` that raises an Exception with the message `area() is not implemented`
+- You are not allowed to import any module
+```bash
+guillaume@ubuntu:~/0x0A$ ./6-main.py
+[Exception] area() is not implemented
+guillaume@ubuntu:~/0x0A$ 
+```
+**No test cases needed**
 ### 
 ### 
 ### 

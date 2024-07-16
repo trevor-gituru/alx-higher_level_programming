@@ -75,6 +75,7 @@ Write a function that returns the JSON representation of an object (string):
 
 - Prototype: `def to_json_string(my_obj):`
 - You don’t need to manage exceptions if the object can’t be serialized.
+```bash
 guillaume@ubuntu:~/0x0B$ ./3-main.py
 [1, 2, 3]
 <class 'str'>
@@ -84,7 +85,20 @@ guillaume@ubuntu:~/0x0B$ ./3-main.py
 guillaume@ubuntu:~/0x0B$
 ```
 **No test cases needed**
-### 
+### 4. From JSON string to Object
+Write a function that returns an object (Python data structure) represented by a `JSON` string:
+
+- Prototype: `def from_json_string(my_str):`
+- You don’t need to manage exceptions if the JSON string doesn’t represent an object.
+guillaume@ubuntu:~/0x0B$ ./4-main.py
+[1, 2, 3]
+<class 'list'>
+{'id': 12, 'is_active': True, 'name': 'John', 'info': {'age': 36, 'average': 3.14}, 'places': ['San Francisco', 'Tokyo']}
+<class 'dict'>
+[ValueError] Expecting property name enclosed in double quotes: line 2 column 25 (char 25)
+guillaume@ubuntu:~/0x0B$ 
+```
+**No test cases needed**
 ### 
 ### 
 ### 

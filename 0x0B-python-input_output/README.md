@@ -70,7 +70,20 @@ This School is so cool!
 guillaume@ubuntu:~/0x0B$ 
 ```
 **No test cases needed**
-### 
+### 3. To JSON string
+Write a function that returns the JSON representation of an object (string):
+
+- Prototype: `def to_json_string(my_obj):`
+- You don’t need to manage exceptions if the object can’t be serialized.
+guillaume@ubuntu:~/0x0B$ ./3-main.py
+[1, 2, 3]
+<class 'str'>
+{"id": 12, "is_active": true, "name": "John", "info": {"average": 3.14, "age": 36}, "places": ["San Francisco", "Tokyo"]}
+<class 'str'>
+[TypeError] {3, 132} is not JSON serializable
+guillaume@ubuntu:~/0x0B$
+```
+**No test cases needed**
 ### 
 ### 
 ### 

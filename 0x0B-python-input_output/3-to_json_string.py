@@ -1,14 +1,24 @@
 #!/usr/bin/python3
 """
-contains to_json_string
-"""
+3-to_json_string.py
 
+This module contains only to_json_ string(obj) function.
+
+Functions:
+- to_json_ string(obj)": Returns a json form of obj
+"""
 
 import json
 
 
 def to_json_string(my_obj):
     """
-    returns the JSON representation of an object (string)
+    Returns a json form of obj
+
+    Args:
+        my_obj: The object to be converted.
+
+    Returns:
+         Returns a json form of obj
     """
     return json.dumps(my_obj)

@@ -15,7 +15,33 @@ Concepts learnt:
 - How to convert a JSON string to a Python data structure
 
 ## Tasks
+### 0. Read file
+Write a function that reads a text file (`UTF8`) and prints it to stdout:
 
+- Prototype: `def read_file(filename=""):`
+- You must use the `with` statement
+- You don’t need to manage file permission or file doesn't exist exceptions.
+- You are not allowed to import any module
+```bash
+guillaume@ubuntu:~/0x0B$ ./0-main.py
+We offer a truly innovative approach to education:
+focus on building reliable applications and scalable systems, take on real-world challenges, collaborate with your peers. 
+
+A school every software engineer would have dreamt of!guillaume@ubuntu:~/0x0B$
+``` 
+**No test cases needed**
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
 ## Resources
 - [7.2. Reading and Writing Files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
 - [8.7. Predefined Clean-up Actions](https://docs.python.org/3/tutorial/errors.html#predefined-clean-up-actions)

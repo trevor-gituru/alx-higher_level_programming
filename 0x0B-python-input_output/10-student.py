@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-contains the class Student
+Contains the class Student
 """
 
 
@@ -13,7 +13,7 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """dicionary representation of a Student instance"""
+        """Dicionary representation of a Student instance"""
         if attrs is None:
             return self.__dict__
         return {key: value for (key, value) in self.__dict__.items()

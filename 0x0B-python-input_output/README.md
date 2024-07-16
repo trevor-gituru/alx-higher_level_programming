@@ -179,9 +179,6 @@ guillaume@ubuntu:~/0x0B$ ./8-main.py
 [MyClass] John - 89
 <class 'dict'>
 {'name': 'John', 'number': 89}
-guillaume@ubuntu:~/0x0B$ 
-guillaume@ubuntu:~/0x0B$ cat 8-my_class_2.py 
-guillaume@ubuntu:~/0x0B$ cat 8-main_2.py 
 guillaume@ubuntu:~/0x0B$ ./8-main_2.py 
 <class '8-my_class_2.MyClass'>
 [MyClass] John - 4 => 1
@@ -191,7 +188,31 @@ guillaume@ubuntu:~/0x0B$
 ```
 **No test cases needed**
 
-### 
+### 9. Student to JSON
+Write a class `Student` that defines a student by:
+
+- Public instance attributes:
+    * `first_name`
+    * `last_name`
+    * `age`
+- Instantiation with `first_name`, `last_name` and `age`: `def __init__(self, first_name, last_name, age):`
+- Public method `def to_json(self):` that retrieves a dictionary representation of a Student instance (same as `8-class_to_json.py`)
+- You are not allowed to import any module
+```bash
+guillaume@ubuntu:~/0x0B$ ./9-main.py 
+<class 'dict'>
+John
+<class 'str'>
+23
+<class 'int'>
+<class 'dict'>
+Bob
+<class 'str'>
+27
+<class 'int'>
+guillaume@ubuntu:~/0x0B$ 
+```
+**No test cases needed**
 ### 
 ### 
 ### 

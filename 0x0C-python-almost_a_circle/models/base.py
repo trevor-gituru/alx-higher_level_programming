@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-model: base
+Model: base
 """
 
 import json
@@ -16,8 +16,8 @@ class Base:
         if id is not None:
             self.id = id
         else:
-            self.__class__.__nb_objects += 1
-            self.id = self.__class__.__nb_objects
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
 
     @staticmethod
     def to_json_string(list_dictionaries):

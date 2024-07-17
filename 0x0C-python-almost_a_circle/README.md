@@ -86,7 +86,14 @@ guillaume@ubuntu:~/$ ./4-main.py
 ##
 guillaume@ubuntu:~/$ 
 ```
-### 
+### 6. __str__
+Update the class `Rectangle` by overriding the `__str__` method so that it returns `[Rectangle] (<id>) <x>/<y> - <width>/<height>`
+```bash
+guillaume@ubuntu:~/$ ./5-main.py
+[Rectangle] (12) 2/1 - 4/6
+[Rectangle] (1) 1/0 - 5/5
+guillaume@ubuntu:~/$ 
+```
 ### 
 ### 
 ### 

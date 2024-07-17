@@ -11,6 +11,8 @@
 - 0x09. Python - Everything is object (**Left with 6 advanced task (29 - 34)**)
 - 0x07. Python - Test-driven development (**Left with 3 advanced task (6 - 8)**)
 - 0x0A. Python - Inheritance (**Left with 2 advanced task (12 - 13)**)
+- 0x0B. Python - Input/Output (**Left with 2 advanced task (13 - 14)**)
+
 ## Requirements
 ### Python Scripts
 - Allowed editors: `vi`, `vim`, `emacs`

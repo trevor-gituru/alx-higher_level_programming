@@ -95,14 +95,8 @@ class Rectangle(Base):
 
     def display(self):
         """prints the Rectangle instance with the character #"""
-        for _ in range(self.__y):
-            # vertical offset - y-coordinate
-            print()
-
-        for _ in range(self.__height):
-            # horizontal offset - x-coordinate
-            print((" " * self.__x) + ("#" * self.__width))
-
+        for _ in range(self.height):
+            print('#' * self.width)
     def __str__(self):
         """returns string representation of an obeject"""
         return "[{:s}] ({:d}) {:d}/{:d} - {:d}/{:d}".format(

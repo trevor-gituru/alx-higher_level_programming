@@ -48,7 +48,20 @@ guillaume@ubuntu:~/$ ./1-main.py
 12
 guillaume@ubuntu:~/$ 
 ```
-### 
+### 3. Validate attributes
+Update the class `Rectangle` by adding validation of all setter methods and instantiation (`id` excluded):
+
+- If the input is not an integer, raise the `TypeError` exception with the message: `<name of the attribute> must be an integer`. Example: `width must be an integer`
+- If `width` or `height` is under or equals `0`, raise the `ValueError` exception with the message: `<name of the attribute> must be > 0`. Example: `width must be > 0`
+- If `x` or `y` is under `0`, raise the `ValueError` exception with the message: `<name of the attribute> must be >= 0`. Example: `x must be >= 0`
+```bash
+guillaume@ubuntu:~/$ ./2-main.py
+[TypeError] height must be an integer
+[ValueError] width must be > 0
+[TypeError] x must be an integer
+[ValueError] y must be >= 0
+guillaume@ubuntu:~/$ 
+```
 ### 
 ### 
 ### 

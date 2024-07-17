@@ -27,27 +27,27 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """width getter"""
+        """Width getter"""
         return self.__width
 
     @property
     def height(self):
-        """height getter"""
+        """Height getter"""
         return self.__height
 
     @property
     def x(self):
-        """x getter"""
+        """X getter"""
         return self.__x
 
     @property
     def y(self):
-        """y getter"""
+        """Y getter"""
         return self.__y
 
     @width.setter
     def width(self, width):
-        """width setter"""
+        """Width setter"""
         if type(width) is not int:
             raise TypeError("width must be an integer")
 

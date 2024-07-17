@@ -2,9 +2,15 @@
 """
 13-pascal_triangle
 """
+
+
 def pascal_triangle(n):
-    """
-    Creates the pascal triangle
+    """Creates the pascal triangle
+
+    Args:
+        n : Size of pascal triangle
+    Return:
+        The pascal triangle as a list of list of integers
     """
     pascal_list = []
     if n <= 0:

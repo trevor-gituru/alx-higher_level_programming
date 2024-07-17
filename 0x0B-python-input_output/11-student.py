@@ -1,11 +1,17 @@
 #!/usr/bin/python3
 """
-contains the class Student
+Contains the class Student
 """
 
 
 class Student:
-    """defines a student"""
+    """defines a student
+
+    Args:
+        first_name: Students first name
+        last_name: Students last name
+        age: Students age
+    """
     def __init__(self, first_name, last_name, age):
         """constructor"""
         self.first_name = first_name
@@ -20,6 +26,6 @@ class Student:
                 if key in attrs}
 
     def reload_from_json(self, json):
-        """replaces all attributes of the Student instance"""
+        """Replaces all attributes of the Student instance"""
         for key, value in json.items():
             setattr(self, key, value)

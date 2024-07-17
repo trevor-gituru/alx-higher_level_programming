@@ -1,4 +1,11 @@
+#!/usr/bin/python3
+"""
+13-pascal_triangle
+"""
 def pascal_triangle(n):
+    """
+    Creates the pascal triangle
+    """
     pascal_list = []
     if n <= 0:
         return pascal_list

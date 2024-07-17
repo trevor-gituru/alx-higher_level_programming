@@ -62,7 +62,15 @@ guillaume@ubuntu:~/$ ./2-main.py
 [ValueError] y must be >= 0
 guillaume@ubuntu:~/$ 
 ```
-### 
+### 4. Area first
+Update the class `Rectangle` by adding the public method `def area(self):` that returns the area value of the `Rectangle` instance.
+```bash
+guillaume@ubuntu:~/$ ./3-main.py
+6
+20
+56
+guillaume@ubuntu:~/$ 
+```
 ### 
 ### 
 ### 

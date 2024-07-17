@@ -283,7 +283,6 @@ Create a function `def pascal_triangle(n):` that returns a list of lists of inte
 - You can assume `n` will be always an integer
 - You are not allowed to import any module
 ```bash
-guillaume@ubuntu:~/0x0B$ 
 guillaume@ubuntu:~/0x0B$ ./12-main.py
 [1]
 [1,1]

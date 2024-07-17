@@ -233,7 +233,45 @@ guillaume@ubuntu:~/0x0B$ ./10-main.py
 guillaume@ubuntu:~/0x0B$
 ```
 **No test cases needed**
-### 
+### 11. Student to disk and reload
+Write a class `Student` that defines a student by: (based on `10-student.py`)
+
+- Public instance attributes:
+    * `first_name`
+    * `last_name`
+    * `age`
+- Instantiation with `first_name`, `last_name` and `age`: `def __init__(self, first_name, last_name, age):`
+- Public method `def to_json(self, attrs=None):` that retrieves a dictionary representation of a Student instance (same as `8-class_to_json.py`):
+    * If `attrs` is a list of strings, only attribute names contained in this list must be retrieved.
+    * Otherwise, all attributes must be retrieved
+- Public method `def reload_from_json(self, json):` that replaces all attributes of the Student instance:
+    * You can assume `json` will always be a dictionary
+    * A dictionary key will be the public attribute name
+    * A dictionary value will be the value of the public attribute
+- You are not allowed to import any module
+- Now, you have a simple implementation of a serialization and deserialization mechanism (concept of representation of an object to another format, without losing any information and allow us to rebuild an object based on this representation)
+```bash
+guillaume@ubuntu:~/0x0B$ ./11-main.py student.json
+Initial student:
+<11-student.Student object at 0x7f832826eda0>
+<class '11-student.Student'>
+<class 'dict'>
+John Doe 23
+{"last_name": "Doe", "first_name": "John", "age": 23}
+Saved to disk
+Fake student:
+<11-student.Student object at 0x7f832826edd8>
+<class '11-student.Student'>
+Fake Fake 89
+Load dictionary from file:
+<11-student.Student object at 0x7f832826edd8>
+<class '11-student.Student'>
+John Doe 23
+guillaume@ubuntu:~/0x0B$ cat student.json ; echo ""
+{"last_name": "Doe", "first_name": "John", "age": 23}
+guillaume@ubuntu:~/0x0B$ 
+```
+**No test cases needed**
 ### 
 ## Resources
 - [7.2. Reading and Writing Files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)

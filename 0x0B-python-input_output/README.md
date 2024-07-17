@@ -272,7 +272,26 @@ guillaume@ubuntu:~/0x0B$ cat student.json ; echo ""
 guillaume@ubuntu:~/0x0B$ 
 ```
 **No test cases needed**
-### 
+### 12. Pascal's Triangle
+**Technical interview preparation:**
+
+- You are not allowed to google anything
+- Whiteboard first
+Create a function `def pascal_triangle(n):` that returns a list of lists of integers representing the Pascal’s triangle of `n`:
+
+- Returns an empty list if `n <= 0`
+- You can assume `n` will be always an integer
+- You are not allowed to import any module
+```bash
+guillaume@ubuntu:~/0x0B$ 
+guillaume@ubuntu:~/0x0B$ ./12-main.py
+[1]
+[1,1]
+[1,2,1]
+[1,3,3,1]
+[1,4,6,4,1]
+guillaume@ubuntu:~/0x0B$ 
+```
 ## Resources
 - [7.2. Reading and Writing Files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
 - [8.7. Predefined Clean-up Actions](https://docs.python.org/3/tutorial/errors.html#predefined-clean-up-actions)

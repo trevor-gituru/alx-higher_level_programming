@@ -21,14 +21,13 @@ class Square(Rectangle):
     @size.setter
     def size(self, value):
         """size setter"""
-        self.width = value
-        self.width = value
+        super().update(width=value, height=value)
 
     def __str__(self):
         """returns string representation of objects"""
         return "[{:s}] ({:d}) {:d}/{:d} - {:d}".format(
             self.__class__.__name__, self.id, self.x, self.y,
-            self.size)
+            self.width)
 
     def update(self, *args, **kwargs):
         """assigns attributes"""

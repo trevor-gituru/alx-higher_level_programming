@@ -19,6 +19,12 @@ from models.base import Base
 
 class TestSquare(unittest.TestCase):
     """tests Base class' methods"""
-    def test_id(self):
+    def test_auto_id(self):
         base1 = Base()
-        self.assertEqual(base1.id, 1)
+        base2 = Base()
+        self.assertNotEqual(base1.id, base2)
+
+    def test_auto_id_prev(self):
+        base1 = Base()
+        base2 = Base()
+        self.assertEqual(base2.id, base1.id + 1)

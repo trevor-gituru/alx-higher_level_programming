@@ -284,7 +284,19 @@ guillaume@ubuntu:~/$ ./15-main.py
 [{"y": 8, "x": 2, "id": 1, "width": 10, "height": 7}, {"y": 0, "x": 0, "id": 2, "width": 2, "height": 4}]
 guillaume@ubuntu:~/$ 
 ``` 
-### 
+### 17. JSON string to dictionary
+Update the class `Base` by adding the static method `def from_json_string(json_string):` that returns the list of the JSON string representation `json_string`:
+
+- `json_string` is a string representing a list of dictionaries
+- If `json_string` is `None` or empty, return an empty list
+- Otherwise, return the list represented by json_string
+```bash
+guillaume@ubuntu:~/$ ./16-main.py
+[<class 'list'>] [{'height': 4, 'width': 10, 'id': 89}, {'height': 7, 'width': 1, 'id': 7}]
+[<class 'str'>] [{"height": 4, "width": 10, "id": 89}, {"height": 7, "width": 1, "id": 7}]
+[<class 'list'>] [{'height': 4, 'width': 10, 'id': 89}, {'height': 7, 'width': 1, 'id': 7}]
+guillaume@ubuntu:~/$ 
+```
 ### 
 ### 
 ## Resources

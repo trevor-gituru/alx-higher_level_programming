@@ -29,4 +29,16 @@ class TestSquare(unittest.TestCase):
     
     def test_to_json_string(self):
         json1 = Base.to_json_string(None)
+        json2 = Base.to_json_string([])
+        json3 = Base.to_json_string([ { 'id': 12 }])
         self.assertEqual(json1, '[]')
+        self.assertEqual(json2, '[]')
+        self.assertEqual(json3, '[{"id": 12}]')
+
+    def test_from_json_string(self):
+        string1 = Base.from_json_string(None)
+        string2 = Base.from_json_string("[]")
+        string3 = Base.from_json_string('[{ "id": 89 }]')
+        self.assertEqual(string1, [])
+        self.assertEqual(string2, [])
+        self.assertEqual(string3, [{'id': 89}])

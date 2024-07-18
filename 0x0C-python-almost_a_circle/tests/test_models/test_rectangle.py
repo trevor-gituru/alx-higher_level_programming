@@ -19,3 +19,4 @@ class TestRectangle(unittest.TestCase):
     """
     class for testing Rectangle class' methods
     """
+    pass

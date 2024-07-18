@@ -19,12 +19,14 @@ from models.base import Base
 
 class TestSquare(unittest.TestCase):
     """tests Base class' methods"""
-    def test_auto_id(self):
+    def test_id(self):
         base1 = Base()
         base2 = Base()
-        self.assertNotEqual(base1.id, base2)
-
-    def test_auto_id_prev(self):
-        base1 = Base()
-        base2 = Base()
+        base3 = Base(89)
+        self.assertNotEqual(base1.id, base2.id)
         self.assertEqual(base2.id, base1.id + 1)
+        self.assertEqual(base3.id, 89)
+    
+    def test_to_json_string(self):
+        json1 = Base.to_json_string(None)
+        self.assertEqual(json1, '[]')

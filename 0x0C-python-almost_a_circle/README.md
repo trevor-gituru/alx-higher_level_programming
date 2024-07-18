@@ -236,7 +236,25 @@ guillaume@ubuntu:~/$ ./12-main.py
 False
 guillaume@ubuntu:~/$ 
 ```
-### 
+### 14. Square instance to dictionary representation
+Update the class `Square` by adding the public method `def to_dictionary(self):` that returns the dictionary representation of a `Square`:
+
+This dictionary must contain:
+
+- `id`
+- `size`
+- `x`
+- `y`
+```bash
+guillaume@ubuntu:~/$ ./13-main.py
+[Square] (1) 2/1 - 10
+{'id': 1, 'x': 2, 'size': 10, 'y': 1}
+<class 'dict'>
+[Square] (2) 1/0 - 1
+[Square] (1) 2/1 - 10
+False
+guillaume@ubuntu:~/$ 
+```
 ### 
 ### 
 ### 

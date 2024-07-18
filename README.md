@@ -12,6 +12,10 @@
 - 0x07. Python - Test-driven development (**Left with 3 advanced task (6 - 8)**)
 - 0x0A. Python - Inheritance (**Left with 2 advanced task (12 - 13)**)
 - 0x0B. Python - Input/Output (**Left with 2 advanced task (13 - 14)**)
+- 0x0C. Python - Almost a circle 
+    * **Left with 1 mandatory task (0)**
+    * **Left with 2 advanced task (20 - 21)**
+
 
 ## Requirements
 ### Python Scripts

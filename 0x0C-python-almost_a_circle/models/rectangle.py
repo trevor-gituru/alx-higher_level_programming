@@ -109,7 +109,7 @@ class Rectangle(Base):
         """assigns an argument to each attribute"""
         attr_list = ["id", "width", "height", "x", "y"]
         for i in range(len(args)):
-            setattr(self,attr_list[i], args[i])
+            setattr(self, attr_list[i], args[i])
 
     def to_dictionary(self):
         """ returns the dictionary representation of a Rectangle"""

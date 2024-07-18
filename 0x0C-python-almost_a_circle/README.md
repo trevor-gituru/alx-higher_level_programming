@@ -315,7 +315,29 @@ False
 False
 guillaume@ubuntu:~/$ 
 ```
-### 
+### 19. File to instances
+Update the class `Base` by adding the class method `def load_from_file(cls):` that returns a list of instances:
+
+- The filename must be: `<Class name>.json` - example: `Rectangle.json`
+- If the file doesn’t exist, return an empty list
+- Otherwise, return a list of instances - the type of these instances depends on `cls` (current class using this method)
+- You must use the `from_json_string` and `create` methods (implemented previously)
+```bash
+guillaume@ubuntu:~/$ ./18-main.py
+[139785912033120] [Rectangle] (1) 2/8 - 10/7
+[139785912033176] [Rectangle] (2) 0/0 - 2/4
+---
+[139785911764752] [Rectangle] (1) 2/8 - 10/7
+[139785911764808] [Rectangle] (2) 0/0 - 2/4
+---
+---
+[139785912058040] [Square] (5) 0/0 - 5
+[139785912061848] [Square] (6) 9/1 - 7
+---
+[139785911764976] [Square] (5) 0/0 - 5
+[139785911765032] [Square] (6) 9/1 - 7
+guillaume@ubuntu:~/$ 
+```
 ## Resources
 - [args/kwargs](https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/)
 - [JSON encoder and decoder](https://docs.python.org/3/library/json.html)

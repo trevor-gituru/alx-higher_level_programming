@@ -216,7 +216,26 @@ guillaume@ubuntu:~/$ ./11-main.py
 [Square] (89) 12/1 - 7
 guillaume@ubuntu:~/$ 
 ```
-### 
+### 13. Rectangle instance to dictionary representation
+Update the class `Rectangle` by adding the public method `def to_dictionary(self):` that returns the dictionary representation of a Rectangle:
+
+This dictionary must contain:
+
+- `id`
+- `width`
+- `height`
+- `x`
+- `y`
+```bash
+guillaume@ubuntu:~/$ ./12-main.py
+[Rectangle] (1) 1/9 - 10/2
+{'x': 1, 'y': 9, 'id': 1, 'height': 2, 'width': 10}
+<class 'dict'>
+[Rectangle] (2) 0/0 - 1/1
+[Rectangle] (1) 1/9 - 10/2
+False
+guillaume@ubuntu:~/$ 
+```
 ### 
 ### 
 ### 

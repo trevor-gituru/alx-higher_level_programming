@@ -297,7 +297,24 @@ guillaume@ubuntu:~/$ ./16-main.py
 [<class 'list'>] [{'height': 4, 'width': 10, 'id': 89}, {'height': 7, 'width': 1, 'id': 7}]
 guillaume@ubuntu:~/$ 
 ```
-### 
+### 18. Dictionary to Instance
+Update the class `Base` by adding the class method `def create(cls, **dictionary):` that returns an instance with all attributes already set:
+
+- `**dictionary` can be thought of as a double pointer to a dictionary
+- To use the `update` method to assign all attributes, you must create a “dummy” instance before:
+    * Create a `Rectangle` or `Square` instance with “dummy” mandatory attributes (width, height, size, etc.)
+    * Call `update` instance method to this “dummy” instance to apply your real values
+- You must use the method `def update(self, *args, **kwargs)`
+- `**dictionary` must be used as `**kwargs` of the method update
+- You are not allowed to use `eval`
+```bash
+guillaume@ubuntu:~/$ ./17-main.py
+[Rectangle] (1) 1/0 - 3/5
+[Rectangle] (1) 1/0 - 3/5
+False
+False
+guillaume@ubuntu:~/$ 
+```
 ### 
 ## Resources
 - [args/kwargs](https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/)

@@ -193,7 +193,29 @@ guillaume@ubuntu:~/$ ./10-main.py
 [TypeError] width must be an integer
 guillaume@ubuntu:~/$ 
 ```
-### 
+### 12. Square update
+Update the class `Square` by adding the public method `def update(self, *args, **kwargs)` that assigns attributes:
+
+- `*args` is the list of arguments - no-keyworded arguments
+    * 1st argument should be the `id` attribute
+    * 2nd argument should be the `size` attribute
+    * 3rd argument should be the `x` attribute
+    * 4th argument should be the `y` attribute
+- `**kwargs` can be thought of as a double pointer to a dictionary: key/value (keyworded arguments)
+- `**kwargs` must be skipped if `*args` exists and is not empty
+- Each key in this dictionary represents an attribute to the instance
+```bash
+guillaume@ubuntu:~/$ ./11-main.py
+[Square] (1) 0/0 - 5
+[Square] (10) 0/0 - 5
+[Square] (1) 0/0 - 2
+[Square] (1) 3/0 - 2
+[Square] (1) 3/4 - 2
+[Square] (1) 12/4 - 2
+[Square] (1) 12/1 - 7
+[Square] (89) 12/1 - 7
+guillaume@ubuntu:~/$ 
+```
 ### 
 ### 
 ### 

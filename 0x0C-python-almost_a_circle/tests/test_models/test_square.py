@@ -12,7 +12,6 @@ import sys
 import unittest
 import inspect
 import io
-import pep8
 from contextlib import redirect_stdout
 from models.square import Square
 
@@ -21,3 +20,4 @@ class TestSquare(unittest.TestCase):
     """
     class for testing Square class' methods
     """
+    pass

@@ -1,4 +1,3 @@
--- lists all rows of a table
--- All fields should be printed
+-- Lists all rows of a table, showing all columns
 
 SELECT * FROM first_table;

@@ -15,6 +15,8 @@
 - 0x0C. Python - Almost a circle 
     * **Left with 1 mandatory task (0)**
     * **Left with 2 advanced task (20 - 21)**
+- 0x0D. SQL - Introduction
+    * **Left with 4 advanced task (17 - 20)**
 
 
 ## Requirements
@@ -39,3 +41,12 @@
 - All your functions (inside and outside a class) should have a documentation `(python3 -c 'print(__import__("my_module").my_function.__doc__)'` and `python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')`
 - A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
 - We strongly encourage you to work together on test cases, so that you don’t miss any edge case
+### MySql
+- Allowed editors: `vi`, `vim`, `emacs`
+- All your files will be executed on Ubuntu 20.04 LTS using `MySQL 8.0` (version 8.0.25)
+- All your files should end with a new line
+- All your SQL queries should have a comment just before (i.e. syntax above)
+- All your files should start by a comment describing the task
+- All SQL keywords should be in uppercase (`SELECT`, `WHERE`…)
+- A `README.md` file, at the root of the folder of the project, is mandatory
+- The length of your files will be tested using `wc`

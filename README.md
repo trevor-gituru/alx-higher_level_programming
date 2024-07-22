@@ -17,6 +17,8 @@
     * **Left with 2 advanced task (20 - 21)**
 - 0x0D. SQL - Introduction
     * **Left with 4 advanced task (17 - 20)**
+- 0x0E. SQL - More queries
+    * **Left with 4 advanced task (17 - 20)**
 
 
 ## Requirements

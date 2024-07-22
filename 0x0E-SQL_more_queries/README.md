@@ -12,15 +12,15 @@ Concepts learnt:
 ### 0. My privileges!
 Write a script that lists all privileges of the MySQL users `user_0d_1` and `user_0d_2` on your server (in localhost).
 ```bash
-guillaume@ubuntu:~/$ cat 0-privileges.sql | mysql -hlocalhost -uroot -p
+guillaume@ubuntu:~/$ cat 0-privileges.sql | mysql -h localhost -u root -p
 Enter password: 
 ERROR 1141 (42000) at line 3: There is no such grant defined for user 'user_0d_1' on host 'localhost'
 guillaume@ubuntu:~/$ 
-guillaume@ubuntu:~/$ echo "CREATE USER 'user_0d_1'@'localhost';" |  mysql -hlocalhost -uroot -p
+guillaume@ubuntu:~/$ echo "CREATE USER 'user_0d_1'@'localhost';" |  mysql -h localhost -u root -p
 Enter password: 
-guillaume@ubuntu:~/$ echo "GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost';" |  mysql -hlocalhost -uroot -p
+guillaume@ubuntu:~/$ echo "GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost';" |  mysql -h localhost -u root -p
 Enter password: 
-guillaume@ubuntu:~/$ cat 0-privileges.sql | mysql -hlocalhost -uroot -p
+guillaume@ubuntu:~/$ cat 0-privileges.sql | mysql -h localhost -u root -p
 Enter password: 
 Grants for user_0d_1@localhost                                                                                                
 GRANT SELECT, INSERT, UPDA..., DROP ROLE ON *.* TO `user_0d_1`@`localhost`                                                                                                                             
@@ -35,9 +35,9 @@ Write a script that creates the MySQL server user `user_0d_1`.
 - The `user_0d_1` password should be set to `user_0d_1_pwd`
 - If the user `user_0d_1` already exists, your script should not fail
 ```bash
-guillaume@ubuntu:~/$ cat 1-create_user.sql | mysql -hlocalhost -uroot -p
+guillaume@ubuntu:~/$ cat 1-create_user.sql | mysql -h localhost -u root -p
 Enter password: 
-guillaume@ubuntu:~/$ cat 0-privileges.sql | mysql -hlocalhost -uroot -p
+guillaume@ubuntu:~/$ cat 0-privileges.sql | mysql -h localhost -u root -p
 Enter password: 
 Grants for user_0d_1@localhost                                                                                                
 GRANT SELECT, INSERT..., DROP ROLE ON *.* TO `user_0d_1`@`localhost`                                                                                                                             
@@ -53,9 +53,9 @@ Write a script that creates the database `hbtn_0d_2` and the user `user_0d_2`.
 - If the database `hbtn_0d_2` already exists, your script should not fail
 - If the user `user_0d_2` already exists, your script should not fail
 ```bash
-guillaume@ubuntu:~/$ cat 2-create_read_user.sql | mysql -hlocalhost -uroot -p
+guillaume@ubuntu:~/$ cat 2-create_read_user.sql | mysql -h localhost -u root -p
 Enter password: 
-guillaume@ubuntu:~/$ cat 0-privileges.sql | mysql -hlocalhost -uroot -p
+guillaume@ubuntu:~/$ cat 0-privileges.sql | mysql -h localhost -u root -p
 Enter password: 
 Grants for user_0d_1@localhost                                                                                                
 GRANT SELECT, ..., DROP ROLE ON *.* TO `user_0d_1`@`localhost`                                                                                                                             
@@ -74,18 +74,18 @@ Write a script that creates the table `force_name` on your MySQL server.
 - The database name will be passed as an argument of the mysql command
 - If the table `force_name` already exists, your script should not fail
 ```bash
-guillaume@ubuntu:~/$ cat 3-`force_name`.sql | mysql -hlocalhost -uroot -p hbtn_0d_2
+guillaume@ubuntu:~/$ cat 3-`force_name`.sql | mysql -h localhost -u root -p hbtn_0d_2
 Enter password: 
-guillaume@ubuntu:~/$ echo 'INSERT INTO `force_name` (id, name) VALUES (89, "Best School");' | mysql -hlocalhost -uroot -p hbtn_0d_2
+guillaume@ubuntu:~/$ echo 'INSERT INTO `force_name` (id, name) VALUES (89, "Best School");' | mysql -h localhost -u root -p hbtn_0d_2
 Enter password: 
-guillaume@ubuntu:~/$ echo 'SELECT * FROM `force_name`;' | mysql -hlocalhost -uroot -p hbtn_0d_2
+guillaume@ubuntu:~/$ echo 'SELECT * FROM `force_name`;' | mysql -h localhost -u root -p hbtn_0d_2
 Enter password: 
 id  name
 89  Best School
-guillaume@ubuntu:~/$ echo 'INSERT INTO `force_name` (id) VALUES (333);' | mysql -hlocalhost -uroot -p hbtn_0d_2
+guillaume@ubuntu:~/$ echo 'INSERT INTO `force_name` (id) VALUES (333);' | mysql -h localhost -u root -p hbtn_0d_2
 Enter password: 
 ERROR 1364 (HY000) at line 1: Field 'name' doesn't have a default value
-guillaume@ubuntu:~/$ echo 'SELECT * FROM `force_name`;' | mysql -hlocalhost -uroot -p hbtn_0d_2
+guillaume@ubuntu:~/$ echo 'SELECT * FROM `force_name`;' | mysql -h localhost -u root -p hbtn_0d_2
 Enter password: 
 id  name
 89  Best School
@@ -100,17 +100,17 @@ Write a script that creates the table `id_not_null` on your MySQL server.
 - The database name will be passed as an argument of the mysql command
 - If the table `id_not_null` already exists, your script should not fail
 ```bash
-guillaume@ubuntu:~/$ cat 4-never_empty.sql | mysql -hlocalhost -uroot -p hbtn_0d_2
+guillaume@ubuntu:~/$ cat 4-never_empty.sql | mysql -h localhost -u root -p hbtn_0d_2
 Enter password: 
-guillaume@ubuntu:~/$ echo 'INSERT INTO id_not_null (id, name) VALUES (89, "Best School");' | mysql -hlocalhost -uroot -p hbtn_0d_2
+guillaume@ubuntu:~/$ echo 'INSERT INTO id_not_null (id, name) VALUES (89, "Best School");' | mysql -h localhost -u root -p hbtn_0d_2
 Enter password: 
-guillaume@ubuntu:~/$ echo 'SELECT * FROM id_not_null;' | mysql -hlocalhost -uroot -p hbtn_0d_2
+guillaume@ubuntu:~/$ echo 'SELECT * FROM id_not_null;' | mysql -h localhost -u root -p hbtn_0d_2
 Enter password: 
 id  name
 89  Best School
-guillaume@ubuntu:~/$ echo 'INSERT INTO id_not_null (name) VALUES ("Best");' | mysql -hlocalhost -uroot -p hbtn_0d_2
+guillaume@ubuntu:~/$ echo 'INSERT INTO id_not_null (name) VALUES ("Best");' | mysql -h localhost -u root -p hbtn_0d_2
 Enter password: 
-guillaume@ubuntu:~/$ echo 'SELECT * FROM id_not_null;' | mysql -hlocalhost -uroot -p hbtn_0d_2
+guillaume@ubuntu:~/$ echo 'SELECT * FROM id_not_null;' | mysql -h localhost -u root -p hbtn_0d_2
 Enter password: 
 id  name
 89  Best School
@@ -126,18 +126,18 @@ Write a script that creates the table `unique_id` on your MySQL server.
 - The database name will be passed as an argument of the mysql command
 - If the table `unique_id` already exists, your script should not fail
 ```bash
-guillaume@ubuntu:~/$ cat 5-unique_id.sql | mysql -hlocalhost -uroot -p hbtn_0d_2
+guillaume@ubuntu:~/$ cat 5-unique_id.sql | mysql -h localhost -u root -p hbtn_0d_2
 Enter password: 
-guillaume@ubuntu:~/$ echo 'INSERT INTO unique_id (id, name) VALUES (89, "Best School");' | mysql -hlocalhost -uroot -p hbtn_0d_2
+guillaume@ubuntu:~/$ echo 'INSERT INTO unique_id (id, name) VALUES (89, "Best School");' | mysql -h localhost -u root -p hbtn_0d_2
 Enter password: 
-guillaume@ubuntu:~/$ echo 'SELECT * FROM unique_id;' | mysql -hlocalhost -uroot -p hbtn_0d_2
+guillaume@ubuntu:~/$ echo 'SELECT * FROM unique_id;' | mysql -h localhost -u root -p hbtn_0d_2
 Enter password: 
 id  name
 89  Best School
-guillaume@ubuntu:~/$ echo 'INSERT INTO unique_id (id, name) VALUES (89, "Best");' | mysql -hlocalhost -uroot -p hbtn_0d_2
+guillaume@ubuntu:~/$ echo 'INSERT INTO unique_id (id, name) VALUES (89, "Best");' | mysql -h localhost -u root -p hbtn_0d_2
 Enter password: 
 ERROR 1062 (23000) at line 1: Duplicate entry '89' for key 'unique_id.id'
-guillaume@ubuntu:~/$ echo 'SELECT * FROM unique_id;' | mysql -hlocalhost -uroot -p hbtn_0d_2
+guillaume@ubuntu:~/$ echo 'SELECT * FROM unique_id;' | mysql -h localhost -u root -p hbtn_0d_2
 Enter password: 
 id  name
 89  Best School
@@ -152,11 +152,11 @@ Write a script that creates the database `hbtn_0d_usa` and the table `states` (i
 - If the database `hbtn_0d_usa` already exists, your script should not fail
 - If the table `states` already exists, your script should not fail
 ```bash
-guillaume@ubuntu:~/$ cat 6-states.sql | mysql -hlocalhost -uroot -p
+guillaume@ubuntu:~/$ cat 6-states.sql | mysql -h localhost -u root -p
 Enter password: 
-guillaume@ubuntu:~/$ echo 'INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas");' | mysql -hlocalhost -uroot -p hbtn_0d_usa
+guillaume@ubuntu:~/$ echo 'INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas");' | mysql -h localhost -u root -p hbtn_0d_usa
 Enter password: 
-guillaume@ubuntu:~/$ echo 'SELECT * FROM states;' | mysql -hlocalhost -uroot -p hbtn_0d_usa
+guillaume@ubuntu:~/$ echo 'SELECT * FROM states;' | mysql -h localhost -u root -p hbtn_0d_usa
 Enter password: 
 id  name
 1   California
@@ -174,18 +174,18 @@ Write a script that creates the database `hbtn_0d_usa` and the table `cities` (i
 - If the database `hbtn_0d_usa` already exists, your script should not fail
 - If the table `cities` already exists, your script should not fail
 ```bash
-guillaume@ubuntu:~/$ cat 7-cities.sql | mysql -hlocalhost -uroot -p
+guillaume@ubuntu:~/$ cat 7-cities.sql | mysql -h localhost -u root -p
 Enter password: 
-guillaume@ubuntu:~/$ echo 'INSERT INTO cities (state_id, name) VALUES (1, "San Francisco");' | mysql -hlocalhost -uroot -p hbtn_0d_usa
+guillaume@ubuntu:~/$ echo 'INSERT INTO cities (state_id, name) VALUES (1, "San Francisco");' | mysql -h localhost -u root -p hbtn_0d_usa
 Enter password: 
-guillaume@ubuntu:~/$ echo 'SELECT * FROM cities;' | mysql -hlocalhost -uroot -p hbtn_0d_usa
+guillaume@ubuntu:~/$ echo 'SELECT * FROM cities;' | mysql -h localhost -u root -p hbtn_0d_usa
 Enter password: 
 id  state_id    name
 1   1   San Francisco
-guillaume@ubuntu:~/$ echo 'INSERT INTO cities (state_id, name) VALUES (10, "Paris");' | mysql -hlocalhost -uroot -p hbtn_0d_usa
+guillaume@ubuntu:~/$ echo 'INSERT INTO cities (state_id, name) VALUES (10, "Paris");' | mysql -h localhost -u root -p hbtn_0d_usa
 Enter password: 
 ERROR 1452 (23000) at line 1: Cannot add or update a child row: a foreign key constraint fails (`hbtn_0d_usa`.`cities`, CONSTRAINT `cities_ibfk_1` FOREIGN KEY (`state_id`) REFERENCES `states` (`id`))
-guillaume@ubuntu:~/$ echo 'SELECT * FROM cities;' | mysql -hlocalhost -uroot -p hbtn_0d_usa
+guillaume@ubuntu:~/$ echo 'SELECT * FROM cities;' | mysql -h localhost -u root -p hbtn_0d_usa
 Enter password: 
 id  state_id    name
 1   1   San Francisco
@@ -199,14 +199,14 @@ Write a script that lists all the cities of California that can be found in the 
 - You are not allowed to use the `JOIN` keyword
 - The database name will be passed as an argument of the mysql command
 ```bash
-guillaume@ubuntu:~/$ echo 'SELECT * FROM states;' | mysql -hlocalhost -uroot -p hbtn_0d_usa
+guillaume@ubuntu:~/$ echo 'SELECT * FROM states;' | mysql -h localhost -u root -p hbtn_0d_usa
 Enter password: 
 id  name
 1   California
 2   Arizona
 3   Texas
 4   Utah
-guillaume@ubuntu:~/$ echo 'SELECT * FROM cities;' | mysql -hlocalhost -uroot -p hbtn_0d_usa
+guillaume@ubuntu:~/$ echo 'SELECT * FROM cities;' | mysql -h localhost -u root -p hbtn_0d_usa
 Enter password: 
 id  state_id    name
 1   1   San Francisco
@@ -215,7 +215,7 @@ id  state_id    name
 6   3   Paris
 7   3   Houston
 8   3   Dallas
-guillaume@ubuntu:~/$ cat 8-cities_of_california_subquery.sql | mysql -hlocalhost -uroot -p hbtn_0d_usa
+guillaume@ubuntu:~/$ cat 8-cities_of_california_subquery.sql | mysql -h localhost -u root -p hbtn_0d_usa
 Enter password: 
 id  name
 1   San Francisco
@@ -230,14 +230,14 @@ Write a script that lists all `cities` contained in the database `hbtn_0d_usa`.
 - You can use only one `SELECT` statement
 - The database name will be passed as an argument of the mysql command
 ```bash
-guillaume@ubuntu:~/$ echo 'SELECT * FROM states;' | mysql -hlocalhost -uroot -p hbtn_0d_usa
+guillaume@ubuntu:~/$ echo 'SELECT * FROM states;' | mysql -h localhost -u root -p hbtn_0d_usa
 Enter password: 
 id  name
 1   California
 2   Arizona
 3   Texas
 4   Utah
-guillaume@ubuntu:~/$ echo 'SELECT * FROM cities;' | mysql -hlocalhost -uroot -p hbtn_0d_usa
+guillaume@ubuntu:~/$ echo 'SELECT * FROM cities;' | mysql -h localhost -u root -p hbtn_0d_usa
 Enter password: 
 id  state_id    name
 1   1   San Francisco
@@ -246,7 +246,7 @@ id  state_id    name
 6   3   Paris
 7   3   Houston
 8   3   Dallas
-guillaume@ubuntu:~/$ cat 9-cities_by_state_join.sql | mysql -hlocalhost -uroot -p hbtn_0d_usa
+guillaume@ubuntu:~/$ cat 9-cities_by_state_join.sql | mysql -h localhost -u root -p hbtn_0d_usa
 Enter password: 
 id  name    name
 1   San Francisco   California
@@ -267,7 +267,7 @@ Write a script that lists all shows contained in `hbtn_0d_tvshows` that have at 
 - You can use only one `SELECT` statement
 - The database name will be passed as an argument of the mysql command
 ```bash
-guillaume@ubuntu:~/$ cat 10-genre_id_by_show.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
+guillaume@ubuntu:~/$ cat 10-genre_id_by_show.sql | mysql -h localhost -u root -p hbtn_0d_tvshows
 Enter password: 
 title   genre_id
 Breaking Bad    1
@@ -302,7 +302,7 @@ Write a script that lists all shows contained in the database `hbtn_0d_tvshows`.
 - You can use only one `SELECT` statement
 - The database name will be passed as an argument of the mysql command
 ```bash
-guillaume@ubuntu:~/$ cat 11-genre_id_all_shows.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
+guillaume@ubuntu:~/$ cat 11-genre_id_all_shows.sql | mysql -h localhost -u root -p hbtn_0d_tvshows
 Enter password: 
 title   genre_id
 Better Call Saul    NULL
@@ -338,7 +338,7 @@ Write a script that lists all shows contained in `hbtn_0d_tvshows` without a gen
 - You can use only one `SELECT` statement
 - The database name will be passed as an argument of the mysql command
 ```bash
-guillaume@ubuntu:~/$ cat 12-no_genre.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
+guillaume@ubuntu:~/$ cat 12-no_genre.sql | mysql -h localhost -u root -p hbtn_0d_tvshows
 Enter password: 
 title   genre_id
 Better Call Saul    NULL
@@ -358,7 +358,7 @@ Write a script that lists all genres from `hbtn_0d_tvshows` and displays the num
 - You can use only one `SELECT` statement
 - The database name will be passed as an argument of the mysql command
 ```bash
-guillaume@ubuntu:~/$ cat 13-count_shows_by_genre.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
+guillaume@ubuntu:~/$ cat 13-count_shows_by_genre.sql | mysql -h localhost -u root -p hbtn_0d_tvshows
 Enter password: 
 genre   number_of_shows
 Drama   5
@@ -382,7 +382,7 @@ Write a script that uses the `hbtn_0d_tvshows` database to lists all genres of t
 - You can use only one `SELECT` statement
 - The database `name` will be passed as an argument of the mysql command
 ```bash
-guillaume@ubuntu:~/$ cat 14-my_genres.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
+guillaume@ubuntu:~/$ cat 14-my_genres.sql | mysql -h localhost -u root -p hbtn_0d_tvshows
 Enter password: 
 name
 Crime
@@ -403,7 +403,7 @@ Write a script that lists all Comedy shows in the database `hbtn_0d_tvshows`.
 - You can use only one `SELECT` statement
 - The database name will be passed as an argument of the mysql command
 ```bash
-guillaume@ubuntu:~/$ cat 15-comedy_only.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
+guillaume@ubuntu:~/$ cat 15-comedy_only.sql | mysql -h localhost -u root -p hbtn_0d_tvshows
 Enter password: 
 title
 New Girl
@@ -412,7 +412,43 @@ The Big Bang Theory
 The Last Man on Earth
 guillaume@ubuntu:~/$ 
 ```
-### 
+### 16. List shows and genres
+Import the database dump from `hbtn_0d_tvshows` to your MySQL server: (same as 15-comedy_only.sql)
+
+Write a script that lists all shows, and all genres linked to that show, from the database hbtn_0d_tvshows.
+
+- If a show doesn’t have a genre, display `NULL` in the genre column
+- Each record should display: `tv_shows.title` - `tv_genres.name`
+- Results must be sorted in ascending order by the show title and genre name
+- You can use only one `SELECT` statement
+- The database name will be passed as an argument of the `mysql` command
+```bash
+guillaume@ubuntu:~/$ cat 16-shows_by_genre.sql | mysql -h localhost -u root -p hbtn_0d_tvshows
+Enter password: 
+title   name
+Better Call Saul    NULL
+Breaking Bad    Crime
+Breaking Bad    Drama
+Breaking Bad    Suspense
+Breaking Bad    Thriller
+Dexter  Crime
+Dexter  Drama
+Dexter  Mystery
+Dexter  Suspense
+Dexter  Thriller
+Game of Thrones Adventure
+Game of Thrones Drama
+Game of Thrones Fantasy
+Homeland    NULL
+House   Drama
+House   Mystery
+New Girl    Comedy
+Silicon Valley  Comedy
+The Big Bang Theory Comedy
+The Last Man on Earth   Comedy
+The Last Man on Earth   Drama
+guillaume@ubuntu:~/$ 
+```
 ## Resources
 - [How To Create a New User and Grant Permissions in MySQL](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql)
 - [How To Use MySQL GRANT Statement To Grant Privileges To a User](https://www.mysqltutorial.org/mysql-administration/mysql-grant/)
@@ -436,11 +472,11 @@ Extra resources around relational database model design:
 ## More info
 ### How to import a SQL dump
 ```bash
-$ echo "CREATE DATABASE hbtn_0d_tvshows;" | mysql -uroot -p
+$ echo "CREATE DATABASE hbtn_0d_tvshows;" | mysql -u root -p
 Enter password: 
-$ curl "https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql" -s | mysql -uroot -p hbtn_0d_tvshows
+$ curl "https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql" -s | mysql -u root -p hbtn_0d_tvshows
 Enter password: 
-$ echo "SELECT * FROM tv_genres" | mysql -uroot -p hbtn_0d_tvshows
+$ echo "SELECT * FROM tv_genres" | mysql -u root -p hbtn_0d_tvshows
 Enter password: 
 id  name
 1   Drama

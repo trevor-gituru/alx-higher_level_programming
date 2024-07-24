@@ -24,6 +24,8 @@ if __name__ == "__main__":
     )
     rows = cur.fetchall()
     for row in rows:
-        print(row)
+        # To handle case insensitive like
+        if row[1][0] == 'N':
+            print(row)
     cur.close()
     db.close()

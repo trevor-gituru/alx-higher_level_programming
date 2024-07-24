@@ -5,7 +5,7 @@ from sqlalchemy.orm import declarative_base
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import ForeignKey
-from sqlalchemy.orm import relationship
+from sqlalchemy.orm import relationship,aliased
 from sqlalchemy.sql import func
 from sqlalchemy import Table, Text
 

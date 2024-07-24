@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-adding the state Louisiana
+adding the state lous
 parameters: username, password, database name
 """
 
@@ -8,20 +8,24 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sys import argv
 from model_state import Base, State
+from sqlalchemy.engine.url import URL
 
 if __name__ == "__main__":
-    username = argv[1]
-    password = argv[2]
-    db = argv[3]
-
-    engine = create_engine(f'mysql+mysqldb://{username}:{password}\
-                           @localhost:3306/{db}')
+    mysql_db = {
+        'drivername': 'mysql',
+        'username': argv[1],
+        'password': argv[2],
+        'database': argv[3],
+        'host': 'localhost',
+        'port': 3306
+    }
+    engine = create_engine(URL.create(**mysql_db))
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    Louisiana = State(name='Louisiana')
-    session.add(Louisiana)
+    lous = State(name='Louisiana')
+    session.add(lous)
     session.commit()
-    print(Louisiana.id)
+    print(lous.id)
 
     session.close()

@@ -28,8 +28,8 @@ if __name__ == "__main__":
     session = Session()
 
     State.cities = relationship(City, order_by=City.id, back_populates='state')
-    
+
     for city in session.query(City).order_by(City.id).all():
-        print(f"{city.state.name:s} : ({city.id:d}) {city.name:s}")
+        print(f"{city.state.name:s}: ({city.id:d}) {city.name:s}")
     session.commit()
     session.close()

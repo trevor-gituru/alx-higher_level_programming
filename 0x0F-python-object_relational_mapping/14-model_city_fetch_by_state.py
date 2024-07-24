@@ -9,20 +9,27 @@ from sqlalchemy.orm import sessionmaker
 from sys import argv
 from model_state import Base, State
 from model_city import City
+from sqlalchemy.orm import relationship
+from sqlalchemy.engine.url import URL
+
 
 if __name__ == "__main__":
-    username = argv[1]
-    password = argv[2]
-    db = argv[3]
+    mysql_db = {
+        'drivername': 'mysql',
+        'username': argv[1],
+        'password': argv[2],
+        'database': argv[3],
+        'host': 'localhost',
+    }
+    engine = create_engine(URL.create(**mysql_db))
 
-    engine = create_engine(f'mysql+mysqldb://{username}:{password}\
-                           @localhost:3306/{db}')
+    Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    cities = session.query(State.name, City.id, City.name).filter(
-             City.state_id == State.id).order_by(City.id).all()
-    for city in cities:
-        print(f'{city[0]}: ({city[1]}) {city[2]}')
-
+    State.cities = relationship(City, order_by=City.id, back_populates='state')
+    
+    for city in session.query(City).order_by(City.id).all():
+        print(f"{city.state.name:s} : ({city.id:d}) {city.name:s}")
+    session.commit()
     session.close()

@@ -19,7 +19,8 @@
     * **Left with 4 advanced task (17 - 20)**
 - 0x0E. SQL - More queries
     * **Left with 4 advanced task (17 - 20)**
-
+- 0x0F. Python - Object-relational mapping
+    * **Left with 3 advanced task (15 - 17)**
 
 ## Requirements
 ### Python Scripts

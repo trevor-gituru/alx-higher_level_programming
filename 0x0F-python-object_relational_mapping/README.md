@@ -377,8 +377,6 @@ Nevada: (15) Carson City
 guillaume@ubuntu:~/0x0F$ 
 ```
 **No test cases needed**
-### 
-### 
 ## More Info
 ### Install and activate venv
 To create a Python Virtual Environment, allowing you to install specific dependencies for this python project, we will install venv:

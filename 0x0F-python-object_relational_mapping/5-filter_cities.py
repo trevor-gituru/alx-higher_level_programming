@@ -14,13 +14,16 @@ if __name__ == "__main__":
                          passwd=argv[2],
                          db=argv[3])
     cur = db.cursor()
-    cur.execute("SELECT cities.name\
-                FROM cities\
-                WHERE cities.state_id =\
-                (SELECT states.id\
-                FROM states\
-                WHERE states.name = %s)\
-                ORDER BY cities.id ASC", (argv[4],))
+    cur.execute(
+        "SELECT cities.name "
+            "FROM cities "
+        "WHERE cities.state_id = "
+            "(SELECT states.id "
+            "FROM states "
+            "WHERE states.name = %s "
+            "LIMIT 1) "
+        "ORDER BY cities.id ASC "
+    , (argv[4],))
     rows = cur.fetchall()
     city_names = [row[0] for row in rows]
     cities_str = ", ".join(city_names)

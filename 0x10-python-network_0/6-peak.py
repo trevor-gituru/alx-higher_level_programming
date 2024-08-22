@@ -9,9 +9,9 @@ Functions:
 
 Usage example:
     import 6-peak
-    
     result = 6-peak.find_peak([1,2,3,4])
 """
+
 
 def find_peak(list_of_integers):
     """
@@ -19,7 +19,6 @@ def find_peak(list_of_integers):
 
     Parameters:
     - `list_of_integers` (list): List of integers.
-    
 
     Returns:
     - int: Peak integer

@@ -36,6 +36,11 @@
 - All your functions (inside and outside a class) should be documented: `python3 -c 'print(__import__("my_module").my_function.__doc__)'` and `python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'`
 - A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method  (the length of it will be verified)
 ## Tasks
+### Sandbox
+```bash
+$ ssh 9e515e25a55a@9e515e25a55a.bda61118.alx-cod.online
+9e515e25a55a@9e515e25a55a.bda61118.alx-cod.online's password: 829f8db0c716b532c925
+```
 ### 0. cURL body size
 Write a Bash script that takes in a URL, sends a request to that URL, and displays the size of the body of the response
 
@@ -68,7 +73,16 @@ guillaume@ubuntu:~/0x10$ ./2-delete.sh 0.0.0.0:5000/route_3 ; echo ""
 I'm a DELETE request
 guillaume@ubuntu:~/0x10$ 
 ``` 
-### 
+### 3. cURL only methods
+Write a Bash script that takes in a URL and displays all HTTP methods the server will accept.
+
+- You have to use `curl`
+Please test your script in the sandbox provided, using the web server running on port 5000
+```bash
+guillaume@ubuntu:~/0x10$ ./3-methods.sh 0.0.0.0:5000/route_4
+OPTIONS, HEAD, PUT
+guillaume@ubuntu:~/0x10$ 
+```
 ### 
 ### 
 ### 

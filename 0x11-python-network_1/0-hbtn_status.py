@@ -14,7 +14,6 @@ from urllib.request import urlopen
 
 url = 'https://alx-intranet.hbtn.io/status'
 with urlopen(url) as response:
-    res_headers = response.info()
     content = response.read()
     print("Body response:")
     print("\t- type: {}".format(type(content)))

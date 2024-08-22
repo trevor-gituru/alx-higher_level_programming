@@ -23,6 +23,8 @@
     * **Left with 3 advanced task (15 - 17)**
 - 0x10. Python - Network #0
     * **Left with 3 advanced task (7 - 9)**
+- 0x11. Python - Network #1
+    * **Left with 1 advanced task (10)**
 
 ## Requirements
 ### Python Scripts

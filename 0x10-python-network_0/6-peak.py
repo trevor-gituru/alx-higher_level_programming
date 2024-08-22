@@ -1,37 +1,31 @@
 #!/usr/bin/python3
 """
-6-peak.py
-
-This module provides functions for getting the peak number in a integer list.
-
-Functions:
-- find_peak: Gets peak number
-
-Usage example:
-    import 6-peak
-    result = 6-peak.find_peak([1,2,3,4])
+Function that finds a peak in a list of unsorted integers
 """
 
 
 def find_peak(list_of_integers):
     """
-    Finds the peak number.
-
-    Parameters:
-    - `list_of_integers` (list): List of integers.
-
-    Returns:
-    - int: Peak integer
-
-    Example:
-    ```python3
-    result = find_peak([1,2,3])
-    ```
+    finds a number that's greater than both left and right neighbors
     """
     if len(list_of_integers) == 0:
         return None
-    peak = list_of_integers[0]
-    for number in list_of_integers:
-        if peak < number:
-            peak = number
-    return peak
+
+    lst = list_of_integers
+    beg = 0
+    end = len(lst) - 1
+
+    if lst[beg] > lst[beg + 1]:
+        return lst[beg]
+    if lst[end] > lst[end - 1]:
+        return lst[end]
+
+    mid = (beg + end) // 2
+    if lst[mid - 1] < lst[mid] and lst[mid + 1] < lst[mid]:
+        return lst[mid]
+    if lst[mid] < lst[mid - 1]:
+        return find_peak(lst[:mid + 1])
+    elif lst[mid] < lst[mid + 1]:
+        return find_peak(lst[mid:])
+    else:
+        return lst[beg]

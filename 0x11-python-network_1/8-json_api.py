@@ -23,7 +23,7 @@ if __name__ == "__main__":
 
     url = 'http://0.0.0.0:5000/search_user'
     if (len(argv) <= 1):
-        values = {"q": ""} 
+        values = {"q": ""}
     else:
         values = {"q": argv[1]}
     response = requests.post(url, data=values)
@@ -37,4 +37,3 @@ if __name__ == "__main__":
             print("[{}] {}".format(res_id, res_name))
     except ValueError as e:
         print("Not a valid JSON")
-

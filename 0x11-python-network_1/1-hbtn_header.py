@@ -10,9 +10,11 @@ in the header of the response.
 
 For detailed task description and requirements, refer to the README file.
 """
-from urllib.request import urlopen
-from sys import argv
-
-with urlopen(argv[1]) as response:
-    res_headers = response.info()
-    print(res_headers.get('X-Request-Id'))
+if __name__ == "__main__":
+    from urllib.request import urlopen
+    from sys import argv
+    
+    url = argv[1]
+    with urlopen(url) as response:
+        res_headers = response.info()
+        print(res_headers.get('X-Request-Id'))

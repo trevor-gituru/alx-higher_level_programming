@@ -21,6 +21,8 @@
     * **Left with 4 advanced task (17 - 20)**
 - 0x0F. Python - Object-relational mapping
     * **Left with 3 advanced task (15 - 17)**
+- 0x10. Python - Network #0
+    * **Left with 3 advanced task (7 - 9)**
 
 ## Requirements
 ### Python Scripts

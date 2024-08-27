@@ -9,4 +9,4 @@ For the moment, and for learning all basic concepts of this language, we will do
 ![js](/images/0_12_1)
 
 ## Resources
-- [Writing JavaScript Code](d)
+- [Writing JavaScript Code](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)

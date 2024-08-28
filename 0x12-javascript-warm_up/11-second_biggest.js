@@ -15,7 +15,7 @@ function secLargest (myList) {
         second = first;
         first = myList[i];
       } else if (second < myList[i]) {
-        second = myList[i]
+        second = myList[i];
       }
     }
     return second;

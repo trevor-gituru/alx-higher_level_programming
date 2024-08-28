@@ -18,3 +18,4 @@ For the moment, and for learning all basic concepts of this language, we will do
 - [Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions#function_scope_and_conflicts)
  - [Objects and Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
  - [var, let and const](https://www.youtube.com/watch?v=sjyJBL5fkp8)
+ - [JavaScript Tutorial](https://www.youtube.com/watch?v=vZBCTc9zHtI)

@@ -1,3 +1,3 @@
 #!/usr/bin/node
-
-console.log(process.argv[2] + ' ' + 'is' + ' ' + process.argv[3]);
+// Task 4
+console.log(process.argv[2] + ' is ' + process.argv[3]);

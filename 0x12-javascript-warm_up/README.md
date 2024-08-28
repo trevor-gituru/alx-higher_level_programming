@@ -16,3 +16,4 @@ For the moment, and for learning all basic concepts of this language, we will do
 - [Operator precedeence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence)
 -[Controlling Program Flow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
 - [Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions#function_scope_and_conflicts)
+ - [Objects and Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)

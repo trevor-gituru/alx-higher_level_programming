@@ -1,4 +1,5 @@
 #!/usr/bin/node
+// Task 12
 const myObject = {
   type: 'object',
   value: 12

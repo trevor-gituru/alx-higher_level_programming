@@ -11,3 +11,4 @@ For the moment, and for learning all basic concepts of this language, we will do
 ## Resources
 - [Writing JavaScript Code](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
 - [Variables](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)
+- [Data Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)

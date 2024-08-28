@@ -1,14 +1,26 @@
 #!/usr/bin/node
-
-function secLargest (args) {
-  if (args.length <= 1) {
-    return 0;
+// Task 11
+function secLargest (myList) {
+  let first, second;
+  if (myList !== undefined && myList.length > 2) {
+    if (myList[0] > myList[1]) {
+      first = myList[0];
+      second = myList[1];
+    } else {
+      first = myList[1];
+      second = myList[0];
+    }
+    for (let i = 2; i < myList.length; i++) {
+      if (first < myList[i]) {
+        second = first;
+        first = myList[i];
+      }
+    }
+    return second;
   } else {
-    const nums = args.map(Number).filter((n, index, array) => array.indexOf(n) === index);
-    nums.sort((a, b) => b - a);
-    return nums[1];
+    return 0;
   }
 }
 
-const numArgs = process.argv.slice(2);
-console.log(secLargest(numArgs));
+const myList = process.argv.slice(2).map(i => parseInt(i));
+console.log(secLargest(myList));

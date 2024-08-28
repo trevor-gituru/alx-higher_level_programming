@@ -1,5 +1,5 @@
 #!/usr/bin/node
-
+// Task 7
 const num = parseInt(process.argv[2]);
 const text = 'C is fun';
 

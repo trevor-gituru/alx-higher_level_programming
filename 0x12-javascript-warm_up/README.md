@@ -20,3 +20,4 @@ For the moment, and for learning all basic concepts of this language, we will do
  - [var, let and const](https://www.youtube.com/watch?v=sjyJBL5fkp8)
  - [JavaScript Tutorial](https://www.youtube.com/watch?v=vZBCTc9zHtI)
  - [ModernJs](https://github.com/mbeaudru/modern-js-cheatsheet?tab=readme-ov-file#async-await)
+- [Module patterns](https://darrenderidder.github.io/talks/ModulePatterns/)

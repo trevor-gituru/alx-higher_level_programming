@@ -2,7 +2,7 @@
 // Task 11
 function secLargest (myList) {
   let first, second;
-  if (myList !== undefined && myList.length > 2) {
+  if (myList !== undefined && myList.length >= 2) {
     if (myList[0] > myList[1]) {
       first = myList[0];
       second = myList[1];
@@ -14,6 +14,8 @@ function secLargest (myList) {
       if (first < myList[i]) {
         second = first;
         first = myList[i];
+      } else if (second < myList[i]) {
+        second = myList[i]
       }
     }
     return second;

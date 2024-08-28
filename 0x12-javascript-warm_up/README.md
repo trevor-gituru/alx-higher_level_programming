@@ -17,3 +17,4 @@ For the moment, and for learning all basic concepts of this language, we will do
 -[Controlling Program Flow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
 - [Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions#function_scope_and_conflicts)
  - [Objects and Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
+ - [var, let and const](https://www.youtube.com/watch?v=sjyJBL5fkp8)

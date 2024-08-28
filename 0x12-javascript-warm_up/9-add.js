@@ -1,8 +1,8 @@
 #!/usr/bin/node
-
+// Task 9
 function add (a, b) {
-  const sum = a + b;
-  console.log(sum);
+  return (a + b);
 }
 
-add(parseInt(process.argv[2]), parseInt(process.argv[3]));
+let sum = add(parseInt(process.argv[2]), parseInt(process.argv[3]));
+console.log(sum);

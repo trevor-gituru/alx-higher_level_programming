@@ -32,6 +32,8 @@
 ## Javascript
 - 0x12. JavaScript - Warm up
     * **Left with 4 advanced task (14 - 17)**
+- 0x13. JavaScript - Objects, Scopes and Closures
+    * **Left with 3 advanced task (11 - 13)**
 
 ## Requirements
 ### Python Scripts

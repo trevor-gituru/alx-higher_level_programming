@@ -192,7 +192,17 @@ guillaume@ubuntu:~/0x13$ ./7-main.js
 2
 guillaume@ubuntu:~/0x13$ 
 ```
-### 
+### 8. Esrever
+Write a function that returns the reversed version of a list:
+
+- Prototype: `exports.esrever = function (list)`
+- You are not allow to use the built-in method reverse
+```bash
+guillaume@ubuntu:~/0x13$ ./8-main.js
+[ 5, 4, 3, 2, 1 ]
+[ 'String', { id: 12 }, 89, 'School' ]
+guillaume@ubuntu:~/0x13$ 
+```
 ### 
 ### 
 ## Resources

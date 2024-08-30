@@ -203,7 +203,18 @@ guillaume@ubuntu:~/0x13$ ./8-main.js
 [ 'String', { id: 12 }, 89, 'School' ]
 guillaume@ubuntu:~/0x13$ 
 ```
-### 
+### 9. Log me
+Write a function that prints the number of arguments already printed and the new argument value. (see example below)
+
+- Prototype: `exports.logMe = function (item)`
+- Output format: `<number arguments already printed>: <current argument value>`
+```bash
+guillaume@ubuntu:~/0x13$ ./9-main.js
+0: Hello
+1: Best
+2: School
+guillaume@ubuntu:~/0x13$ 
+```
 ### 
 ## Resources
 - [JavaScript object basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)

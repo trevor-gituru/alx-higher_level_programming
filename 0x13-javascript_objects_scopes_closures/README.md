@@ -1,4 +1,4 @@
-# JavaScript - Objects, Scopes and Closures
+# 0x13. JavaScript - Objects, Scopes and Closures
 ## Concepts learnt
 - Why JavaScript programming is amazing
 - How to create an object in JavaScript

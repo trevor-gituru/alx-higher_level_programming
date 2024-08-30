@@ -6,3 +6,5 @@
 - [super](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
 - [extends](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends)
 - [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
+- [Inheritance in JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript)
+- [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#emulating_private_methods_with_closures)

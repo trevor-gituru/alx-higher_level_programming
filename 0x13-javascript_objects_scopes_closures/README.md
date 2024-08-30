@@ -62,7 +62,31 @@ Rectangle { width: 2, height: undefined }
 undefined
 guillaume@ubuntu:~/0x13$ 
 ```
-### 
+### 2. Rectangle #2
+Write a class `Rectangle` that defines a rectangle:
+
+- You must use the `class` notation for defining your class
+- The constructor must take 2 arguments `w` and `h`
+- Initialize the instance attribute `width` with the value of `w`
+- Initialize the instance attribute `height` with the value of `h`
+- If `w` or `h` is equal to `0` or not a positive integer, create an empty object
+```bash
+guillaume@ubuntu:~/0x13$ cat 2-main.js
+guillaume@ubuntu:~/0x13$ ./2-main.js
+Rectangle { width: 2, height: 3 }
+2
+3
+Rectangle {}
+undefined
+undefined
+Rectangle {}
+undefined
+undefined
+Rectangle {}
+undefined
+undefined
+guillaume@ubuntu:~/0x13$ 
+``` 
 ### 
 ### 
 ### 

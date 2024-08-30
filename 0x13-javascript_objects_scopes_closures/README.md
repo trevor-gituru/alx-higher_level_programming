@@ -215,7 +215,22 @@ guillaume@ubuntu:~/0x13$ ./9-main.js
 2: School
 guillaume@ubuntu:~/0x13$ 
 ```
-### 
+### 10. Number conversion
+Write a function that converts a number from base 10 to another base passed as argument:
+
+- Prototype: `exports.converter = function (base)`
+- You are not allowed to import any file
+- You are not allowed to declare any new variable (`var`, `let`, etc..)
+```bash
+guillaume@ubuntu:~/0x13$ ./10-main.js
+2
+12
+89
+2
+c
+59
+guillaume@ubuntu:~/0x13$ 
+```
 ## Resources
 - [JavaScript object basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
 - [Object-oriented JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming)(**(read all examples!)**)

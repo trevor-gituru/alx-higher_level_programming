@@ -88,7 +88,6 @@ undefined
 guillaume@ubuntu:~/0x13$ 
 ``` 
 ### 3. Rectangle #3
-### 2. Rectangle #2
 Write a class `Rectangle` that defines a rectangle:
 
 - You must use the `class` notation for defining your class

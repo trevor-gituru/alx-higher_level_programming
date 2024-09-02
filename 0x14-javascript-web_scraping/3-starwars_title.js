@@ -2,8 +2,8 @@
 // Task 3
 
 const request = require('request');
-const requestURL = "https://swapi-api.alx-tools.com";
-const requestURI = "/api/films/" + process.argv[2];
+const requestURL = 'https://swapi-api.alx-tools.com';
+const requestURI = '/api/films/' + process.argv[2];
 const fullURL = requestURL + requestURI;
 request(fullURL, function (err, response) {
   if (err) {
